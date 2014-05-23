@@ -1,0 +1,36 @@
+body {
+
+}
+
+.largest{
+	text-align: center;
+	font-size: 500%;
+	color: rgb(150,0,0);
+}
+
+.larger{
+	text-align: right;
+	margin-right: 25%;
+	font-size: 250%;
+	color: rgb(75,0,0);
+}
+
+p {
+	margin: 0pt;
+	font-family: Georgia
+}
+
+.divtemp{
+	margin-top: 10%;
+	padding: 10pt;
+}
+
+.copyyright{
+	float: 
+	vertical-align: bottom;
+}
+
+.middleofpage{
+	vertical-align: middle;
+	text-align: middle;
+}

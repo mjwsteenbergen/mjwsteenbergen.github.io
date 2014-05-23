@@ -1,0 +1,135 @@
+/*DOCUMENT*/
+
+.header{
+    margin-top: 3%;
+}
+
+.titel{
+    margin-top: 3%;
+    background-color: white;
+    padding: 2%;
+}
+
+.titeltekst{
+    font-size: 200%;
+	background-color: white;
+    border-bottom: 0pt;
+    padding: 7%
+}
+
+.titelimg{
+	margin-top: 4%;
+    margin-right: 3%;
+	width: 40%;
+	float: right;
+}
+
+.ondertitel{
+    font-size: 20pt;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.content{
+	height: 1600pt;
+}
+
+
+#timeline{
+    height: 1600pt;
+    width: 1%;
+    background-color:white;
+    float: left;
+}
+
+#rightcontent {
+    height: 100%;
+    float: right;
+    width: 49.5%;
+}
+
+#leftcontent {
+    height:100%;
+    float: left;
+    width: 49.5%;
+}
+
+.r-balk{
+    float: right;
+}
+
+.l-balk{
+    float: left;
+}
+
+.balk{
+    height: 0.5%;
+    width: 45%;
+    background-color:white;
+    margin-top: 16%;
+}
+
+.circle{
+    position: relative;
+    float: left;
+    width: 180pt;
+    height: 180pt;
+    -webkit-border-radius: 90pt;
+    -moz-border-radius: 90pt;
+    border-radius: 90pt; 
+    border-style: solid;
+    border-color: white;
+    border-width: 7px;
+}
+
+#contentik {
+    height:10%;
+    width: 100%;
+    margin-top: 30%;
+}
+
+#picture-martijn{
+    background-image: url(wiebenikimg.jpg);
+    background-position: -285px 300px;
+    background-size: 600pt,360pt;
+}
+
+#content-Delft{
+    margin-top: 50%;
+}
+
+#picture-Delft{
+    background-image: url(TuDelftLogo.png);
+    background-size: 10pt,10pt;
+    float: right;
+    
+}
+
+.copyr{
+	width: 75%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+}
+.copyrtext{
+	text-align: center;
+	font-size: 80%;
+	padding-top: 1%;
+}
+
+.achernaam {
+    padding-left: 30%;
+}
+
+.naam {
+    color: 	rgb(75,0,0);
+	font-size: 267%;
+	font-family: Georgia;
+	margin-top: 3%;
+    font-weight: 600;
+}
+
+.voor {
+    padding-left: 20%
+}
