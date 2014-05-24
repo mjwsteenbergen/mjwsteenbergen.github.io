@@ -1,14 +1,26 @@
 h1 {
-    position: absolute;
-    bottom: 50%;
-    top: 50%;
     text-align: center;
-    width: 100%;
+
     font-family: "Arial";
+    font-size: 500%;
 }
 
 .all{
     position: fixed;
     height: 100%;
     width: 100%;
+}
+
+.tekst{
+    width: 100%;  
+    position: absolute;
+    bottom: 45%;
+}
+
+a:link {
+color:#000;
+}
+
+a:visited {
+color:#000;
 }
