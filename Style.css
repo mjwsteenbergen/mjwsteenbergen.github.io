@@ -1,0 +1,14 @@
+h1 {
+    position: absolute;
+    bottom: 50%;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    font-family: "Arial";
+}
+
+.all{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
