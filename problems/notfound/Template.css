@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+.largest{
+	text-align: center;
+	font-size: 500%;
+	color: rgb(150,0,0);
+}
+
+.larger{
+	text-align: right;
+	margin-right: 25%;
+	font-size: 250%;
+	color: rgb(75,0,0);
+}
+
+.titel
+{
+    margin-left: 10%;
+}
+
+p {
+	margin: 0pt;
+}
+
+.divtemp{
+	margin-top: 10%;
+	padding: 10pt;
+}
+
+.copyyright{
+	float: 
+	vertical-align: bottom;
+}
+
+.middleofpage{
+	vertical-align: middle;
+	text-align: middle;
+}
+.red {
+    margin: 0;
+    background-color: rgb(150,0,0);
+	color: white;
+    font-size: 500%;
+    height: 33%;
+    position: relative;
+}
+
+.topText
+{
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    text-align: center;
+}
+
+.arrow{
+    background-image: url(bestanden/Black_Down_Arrow.png);
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 75% 20%;
+    float: left;
+    height: 10%;
+    width: 4%;
+    margin-left: 40%;
+}
+    
+.goBack {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.goBackText {
+    color: rgb(150,0,0);
+    font-size: 200%;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: rgb(150,0,0);
+}
