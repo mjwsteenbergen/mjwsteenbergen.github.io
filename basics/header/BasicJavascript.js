@@ -8,8 +8,8 @@ $( window ).resize(function(){
 });
 
 function resize(){
-    height2 = $(window).height()*0.05;
-    if (height2 < 50) {height2 = 50};
+    height2 = $(window).height()*0.05*0;
+    if (height2 < 35) {height2 = 35};
     $(".header").css('height', height2 + 'px');
     height = $(".header").height();
     $(".headerbuttontext").css('font-size', height/2 + 'px');

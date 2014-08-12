@@ -1,5 +1,8 @@
 {
     "jscodehints.detectedExclusions": [
-        "C:/Users/Hester/Documents/Martijn/PDMW/Github/newnottakename.github.io/Uni/Puzzle/Fifteen Puzzle_bestanden/provided.js"
+        "C:/Users/Hester/Documents/Martijn/PDMW/Github/newnottakename.github.io/Uni/Puzzle/Fifteen Puzzle_bestanden/provided.js",
+        "C:/Users/Hester/Documents/Martijn/PDMW/Github/newnottakename.github.io/Uni/Puzzle/Fifteen Puzzle_bestanden/prototype.js",
+        "C:/Users/Hester/Documents/Martijn/PDMW/Github/newnottakename.github.io/Uni/Puzzle/Fifteen Puzzle_bestanden/fifteen.js",
+        "C:/Users/Hester/Documents/Martijn/PDMW/Github/newnottakename.github.io/Uni/Pimpmytext/Pimp My Text!_bestanden/prototype.js"
     ]
 }
