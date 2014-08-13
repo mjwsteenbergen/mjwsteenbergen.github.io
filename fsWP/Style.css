@@ -1,0 +1,74 @@
+
+body {
+ margin: 0;   
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(bestanden/HelveticaNeue.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Light";
+    src: url(bestanden/HelveticaNeue-Light.otf) format("truetype");
+}
+
+.title {
+    margin-top: 5%;
+    background-color: black;
+    font-family: "HelveticaNeue-Light","Helvetica Neue","Helvetica";
+    font-weight: 550;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.content {
+    background-color: #22B5FF;
+    padding-bottom: 3%;
+}
+
+
+
+.download {
+    background-color: white;
+    padding: 2%;
+    padding-right: 15%;
+    font-family: "Helvetica Neue";
+    font-size: 150%;
+    text-align: right;
+}
+
+.cTitel {
+    margin-top: 5%;
+    font-family: "HelveticaNeue-Light";
+    color: white;
+    font-size: 250%;
+    margin-left: 5%;
+}
+
+
+
+.screenshots {
+    margin-top: 1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #404040;
+    height: 60%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+ul.screenshots li {
+  display: inline;
+}
+
+.sShot {
+    height: 100%;
+    margin-left: 1%;
+    display: inline;
+}
