@@ -9,6 +9,9 @@ $(window).resize(function(){
 function resize(){
     if ($("#screenshots").height() < 380)
         {$("#screenshots").css('height', '380px')}
+    else
+        {$("#screenshots").css('height', '60%')}
+    
     
 //    height2 = $(window).height()*0.05;
 //    if (height2 < 50) {height2 = 50};
