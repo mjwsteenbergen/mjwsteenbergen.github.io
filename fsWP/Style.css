@@ -1,10 +1,11 @@
 
 body {
- margin: 0;   
+    margin: 0;
+    font-family: "Helvetica";
 }
 
 @font-face {
-    font-family: "Helvetica Neue";
+    font-family: "HelveticaNeue";
     src: url(bestanden/HelveticaNeue.otf) format("truetype");
 }
 
@@ -13,16 +14,23 @@ body {
     src: url(bestanden/HelveticaNeue-Light.otf) format("truetype");
 }
 
+@font-face {
+    font-family: "HelveticaNeue-Bold";
+    src: url(bestanden/HelveticaNeue-Bold.otf) format("truetype");
+}
+
 .title {
     margin-top: 5%;
     background-color: black;
-    font-family: "HelveticaNeue-Light","Helvetica Neue","Helvetica";
+    font-family: "HelveticaNeue-Light","HelveticaNeue","Helvetica";
     font-weight: 550;
     font-size: 200%;
     text-align: center;
     color: white;
     padding-top: 3%;
     padding-bottom: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .content {
@@ -36,22 +44,27 @@ body {
     background-color: white;
     padding: 2%;
     padding-right: 15%;
-    font-family: "Helvetica Neue";
+    font-family: "HelveticaNeue-Bold";
     font-size: 150%;
     text-align: right;
 }
 
 .cTitel {
-    margin-top: 5%;
-    font-family: "HelveticaNeue-Light";
+    margin-top: 2%;
+    font-family: "HelveticaNeue";
     color: white;
     font-size: 250%;
     margin-left: 5%;
 }
 
+.cText {
+    margin-top: 1%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-family: "Helvetica";
+}
 
-
-.screenshots {
+#screenshots {
     margin-top: 1%;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -63,7 +76,7 @@ body {
     overflow-x: auto;
 }
 
-ul.screenshots li {
+li {
   display: inline;
 }
 
@@ -72,3 +85,5 @@ ul.screenshots li {
     margin-left: 1%;
     display: inline;
 }
+
+
