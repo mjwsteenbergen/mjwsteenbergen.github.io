@@ -50,11 +50,11 @@ body {
 }
 
 .cTitel {
-    font-size: large;
+    font-size: 200%;
     color: white;
     font-family: "HelveticaNeue";
-/*    margin-top: 2%;*/
-    margin-left: 5%;
+    padding-top: 2%;
+    padding-left: 5%;
 }
 
 .cText {
