@@ -11,10 +11,10 @@ $(window).scroll(function(){
 });
 
 function resize(){
-    if ($("#screenshots").height() < 380)
-        {$("#screenshots").css('height', '380px')}
-    else
-        {$("#screenshots").css('height', '60%')}
+//    if ($(window).height() < 380)
+        {$(".sShot").css('height', $(window).height() - $(window).height() * 0.15 + 'px')}
+//    else
+//        {$("#screenshots").css('height', '60%')}
     
     
 //    height2 = $(window).height()*0.05;

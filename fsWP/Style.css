@@ -50,7 +50,7 @@ body {
 }
 
 .cTitel {
-    font-size: xx-large;
+    font-size: x-large;
     color: white;
     font-family: "HelveticaNeue";
     padding-top: 2%;
@@ -82,8 +82,8 @@ body {
 }
 
 .sShot {
-    height: 100%;
-    margin-left: 1%;
+    height: 400pt;
+    margin-left: 2%;
     display: inline;
 }
 
@@ -91,7 +91,6 @@ body {
 ul#features {
     list-style-type: none;
     margin-left: 3%;
-    font-size: 125%;
 }
 
 
