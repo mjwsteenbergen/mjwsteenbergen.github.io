@@ -88,9 +88,9 @@ body {
 }
 
 
-ul#features {
+#features {
     list-style-type: none;
-    padding-left: 3%;
+    padding-left: 6%;
     font-family: "Helvetica";
 }
 
