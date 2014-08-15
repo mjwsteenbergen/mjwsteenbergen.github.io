@@ -6,6 +6,10 @@ $(window).resize(function(){
     resize()
 });
 
+$(window).scroll(function(){
+    resize()
+});
+
 function resize(){
     if ($("#screenshots").height() < 380)
         {$("#screenshots").css('height', '380px')}

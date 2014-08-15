@@ -76,8 +76,9 @@ body {
     overflow-x: auto;
 }
 
-li {
+#screenshots li {
   display: inline;
+    
 }
 
 .sShot {
@@ -85,5 +86,14 @@ li {
     margin-left: 1%;
     display: inline;
 }
+
+
+ul#features {
+    list-style-type: none;
+    margin-left: 3%;
+    font-size: 125%;
+}
+
+
 
 
