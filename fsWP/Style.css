@@ -90,7 +90,8 @@ body {
 
 ul#features {
     list-style-type: none;
-    margin-left: 3%;
+    padding-left: 3%;
+    font-family: "Helvetica";
 }
 
 
