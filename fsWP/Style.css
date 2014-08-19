@@ -89,9 +89,13 @@ body {
 
 
 #features {
-    list-style-type: none;
     padding-left: 6%;
     font-family: "Helvetica";
+    list-style-type: none;
+}
+
+li {
+    
 }
 
 
