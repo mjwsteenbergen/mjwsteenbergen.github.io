@@ -35,7 +35,6 @@ body {
 
 .content {
     background-color: #22B5FF;
-    padding-bottom: 3%;
 }
 
 
@@ -101,3 +100,39 @@ li {
 
 
 
+
+.bottom {
+    margin-top: 5%;
+    background-color: black;
+    overflow: auto;
+    padding: 2%;
+}
+
+#bottom li {
+    display: inline;
+    margin-right: 2%;
+}
+.bottomItem {
+    color: white;
+    float: left;
+    font-family: "HelveticaNeue-light";
+    font-size: 2em;
+    margin-right: 8%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bot1 {
+    right: 25%;
+}
+
+.dash {
+    float: left;
+    color: white;
+     margin-left: 4%;
+    margin-right: 4%;
+    font-size: 2em;
+}
