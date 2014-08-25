@@ -1,0 +1,456 @@
+/*DOCUMENT*/
+
+@font-face {
+    font-family: Raleway;
+    src: url("Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url("Raleway-Light.ttf");
+}
+
+@font-face {
+  font-family: 'SSB';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Source Sans Pro Black'), local('SourceSansPro-Black'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGHiec-hVyr2k4iOzEQsW1iE.woff) format('woff');
+}
+
+
+.header{
+    margin-top: 3%;	
+}
+
+.titel{
+    margin-top: 3%;
+    background-color: black;
+    padding: 2;%
+}
+
+
+
+.titeltekst{
+    font-size: 200%;
+    border-bottom: 0pt;
+    padding: 7%;
+}
+
+
+
+.titelimg{
+	margin-top: 4%;
+    margin-right: 3%;
+	width: 40%;
+	float: right;
+}
+
+
+
+.ondertitel{
+	
+    font-size: 20pt;
+	font-family: Source Sans Pro;
+	margin-left: auto;
+    margin-right: auto;
+	padding-right: 10%;
+    text-align: center;
+	
+
+}
+
+
+
+.content{
+	
+	height: 1600pt;
+	
+
+}
+
+
+
+
+#timeline{
+	
+    height: 1600pt;
+	
+    width: 1%;
+	
+    background-color:white;
+	
+    float: left;
+	
+
+}
+
+
+
+#rightcontent {
+	
+    height: 100%;
+	
+    float: right;
+	
+    width: 49.5%;
+	
+
+}
+
+
+
+#leftcontent {
+	
+    height:100%;
+	
+    float: left;
+	
+    width: 49.5%;
+	
+
+}
+
+
+
+.r-balk{
+	
+    float: right;
+	
+
+}
+
+
+
+.l-balk{
+	
+    float: left;
+	
+
+}
+
+
+
+.balk{
+	
+    height: 0.5%;
+	
+    width: 45%;
+	
+    background-color:white;
+	
+    margin-top: 16%;
+	
+
+}
+
+
+
+.circle{
+	
+    position: relative;
+	
+    float: left;
+	
+    width: 180pt;
+	
+    height: 180pt;
+	
+    -webkit-border-radius: 90pt;
+	
+    -moz-border-radius: 90pt;
+	
+    border-radius: 90pt;
+	 
+    border-style: solid;
+	
+    border-color: white;
+	
+    border-width: 7px;
+	
+
+}
+
+
+
+.contentB{
+/*    From this point*/
+    margin-top: 4%;
+    margin-bottom: -4px;
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+
+
+.content11{
+	
+    height: 100%;
+	
+    width: 30%;
+	
+    float:left;
+	
+    background-image: url(wiebenikimg.jpg);
+	
+    background-position: -190px -200px;
+	
+    background-size: 600pt,360pt;
+	
+
+}
+
+
+
+.content12{
+	
+    height: 100%;
+    float: left;
+}
+
+
+
+#content2{
+	
+    height:450pt;
+	padding: 20pt;
+    //background-color: #D1D1D1;
+    background-color: rgb(69,155,168);
+
+
+}
+
+#content3title{
+    height: 100pt;
+    background-color: rgb(69,155,168);
+}
+
+#content3{
+    height: 400pt;   
+}
+
+
+
+#picture-Delft{
+	
+    background-image: url(TuDelftLogo.png);
+	
+    background-size: 10pt,10pt;
+	
+    float: right;
+	
+    
+
+}
+
+
+
+.copyr{
+	width: 100%;
+    margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+    text-align: center;
+}
+
+
+.copyrtext{
+    font-family: 'Source Sans Pro';
+	text-align: center;
+	padding-top: 1%;
+}
+
+
+
+.achernaam {
+	
+    padding-left: 30%;
+	
+
+}
+
+
+
+.naam {
+	
+    color: 	rgb(75,0,0);
+	
+	font-size: 267%;
+	
+	font-family: Georgia;
+	
+	margin-top: 3%;
+	
+    font-weight: 600;
+	
+
+}
+
+
+
+.voor {
+	
+    padding-left: 20%
+
+}
+
+
+
+.contentTitle {
+	
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    font-size: 30pt;
+    margin-top: 5%;
+    vertical-align: top;
+}
+
+#content2title {
+    font-family: Source Sans Pro;
+    font-weight: 500;
+    font-size: 300%;
+    margin-left: 2%;
+    color: rgb(19,105,118);
+    height: 100pt;    
+}
+
+.project {
+/*
+    height: 280pt;
+    width: 280pt;
+    border-color: white;
+    border-style: solid;
+    border-width: 10pt;
+    float: left;
+    margin-right: 10%;
+*/
+    
+    margin-top: 3%;
+    height: 35%;
+    width: 100%;
+    background-color: #C4C4C4;
+}
+
+.projectTitle {
+    width: 33%;
+    text-align: right;
+	font-family: 'Cabin';
+    font-size: 750%;
+    color: #5f5f5f;
+}
+
+.projectTitleim {
+    vertical-align: middle;
+    height: 150px;
+}
+
+.projectSubtitle {
+/*
+    color: white;
+    width: 100%;
+    text-align: center;
+	font-family: 'Cabin';
+    font-size: 200%;
+	float: left;
+    line-height: 200%;
+    margin-bottom: 0;
+*/
+    font-size: 200%;
+    margin-left: 10%;
+    color: #5f5f5f;
+    font-family: 'SSB';
+}
+
+.projectLinkimg {
+    height: 10pt;
+}
+
+.projectlogo {
+    
+}
+
+.image {
+        height: 400px;  
+}
+
+
+
+.block2 {
+    background-color: white;
+    color: black;
+    text-align: right;
+}
+
+.block2T {
+    color: black;
+    vertical-align: top;
+}
+
+.block1T {
+    vertical-align: top;
+
+}
+
+.block1 {
+    background-color:rgb(180,0,0);
+    color: white;
+}
+
+.block3 {
+    text-align: center;
+}
+
+.projectDescription {
+    margin-left: 10%;
+    color: white;
+    font-weight: 600;
+    font-family: 'Source Sans Pro';
+}
+
+
+
+.contentText {
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    margin-top: 5%;
+}
+
+table{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-image-width: 0;
+    border-collapse:collapse;
+}
+
+.contentB tr td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-image-width: 0;
+    border-collapse:collapse;
+
+}
+
+.noThing {
+    margin: 0;
+    padding: -4;
+    border-image-width: 0;
+    border-collapse:collapse;
+    border-spacing: 0;
+    border: none;
+}
+
+.cTl {
+    padding-right: 5%;
+}
+
+.cTr {
+    margin-left: 5%;
+}
+
+.top {
+    vertical-align: top;
+}
