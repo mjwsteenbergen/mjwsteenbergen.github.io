@@ -102,10 +102,11 @@ li {
 
 
 .bottom {
+/*
     margin-top: 5%;
     background-color: black;
-    overflow: auto;
     padding: 2%;
+*/
 }
 
 #bottom li {
