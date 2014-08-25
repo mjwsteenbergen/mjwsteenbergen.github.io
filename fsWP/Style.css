@@ -113,10 +113,10 @@ li {
     margin-right: 2%;
 }
 .bottomItem {
+    font-size: x-large;
     color: white;
 /*    float: left;*/
     font-family: "HelveticaNeue";
-    font-size: xx-large;
     margin-right: 8%;
 }
 
