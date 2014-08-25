@@ -4,6 +4,12 @@ body {
     font-family: "Helvetica";
 }
 
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
 @font-face {
     font-family: "HelveticaNeue";
     src: url(bestanden/HelveticaNeue.otf) format("truetype");
