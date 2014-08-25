@@ -115,16 +115,9 @@ li {
 .bottomItem {
     font-size: x-large;
     color: white;
-    font-family: "HelveticaNeue";
-    padding-top: 2%;
-    padding-left: 5%;
-    /*
-    font-size: x-large;
-    color: white;
     float: left;
-    font-family: "HelveticaNeue";
+    font-family: "HelveticaNeue-light";
     padding-right: 8%;
-*/
 }
 
 .center {
