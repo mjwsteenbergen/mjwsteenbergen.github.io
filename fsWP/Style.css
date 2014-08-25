@@ -114,7 +114,11 @@ li {
 }
 .bottomItem {
     color: white;
+<<<<<<< HEAD
 /*    float: left;*/
+=======
+    float: left;
+>>>>>>> origin/master
     font-family: "HelveticaNeue";
     font-size: xx-large;
     margin-right: 8%;
