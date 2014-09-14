@@ -22,4 +22,23 @@ $( window ).resize(function(){
         $("body").css("width", "auto");
     }
     
+    $()
+    
+});
+
+
+$(window).scroll(function(){
+    var offset = $(window).scrollTop() * 2;
+    if(offset < 0)
+    { offset = 0;}
+    if (offset > $("#img1").width())
+    { offset = $("#img1").width() }
+    $("#block1").css("margin-left", offset + "px");
+    
+    var offset2 = $(window).scrollTop() * 2 - $("#block2").offset().top ;
+    if(offset2 < 0)
+    { offset2 = 0;}
+    if (offset2 > $("#img2").width())
+    { offset2 = $("#img2").width() }
+    $("#block2").css("margin-right", offset2 + "px");
 });
