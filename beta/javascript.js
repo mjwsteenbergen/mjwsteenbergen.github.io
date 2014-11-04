@@ -8,10 +8,10 @@ $(document).ready(function () {
 function init() {
     $(".socitem").hover(function () {
         $(this).children("div").animate({
-            height: "100%",
-            width: "100%",
-            top: "0%",
-            left: "0%"
+            height: "104%",
+            width: "104%",
+            top: "-2%",
+            left: "-2%"
 
         }, 400)
     }, function () {
@@ -40,8 +40,8 @@ $(window).resize(function () {
 $(window).scroll(function () {
     var offset = $(window).scrollTop();
 
-//    $("#content1").css("background-position", "0px " + offset + "px");
-//$("#content1").css("height", "5" + " px");
+    //    $("#content1").css("background-position", "0px " + offset + "px");
+    //$("#content1").css("height", "5" + " px");
 
     if ($("#l1").offset().top - (offset + $(window).height()) < 0) {
         $("#l1").animate({
