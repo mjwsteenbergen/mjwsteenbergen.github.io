@@ -34,7 +34,7 @@ body {
     background-image: url(bestanden/wiebenik.JPG);
     background-size: 100%;
     background-attachment: fixed;
-    height: 920px;
+    height: 100%;
     width: 100%;
 }
 #name {
@@ -49,7 +49,6 @@ body {
     margin-top: 10%;
     width: 100%;
     margin-bottom: 10%;
-    /*    height: 700px;*/
 }
 #titleBox {
     margin-top: 30%;
@@ -83,7 +82,7 @@ h2 {
     margin-bottom: 4%;
     margin-left: 25%;
 }
-.phone {
+#phone {
     width: 30%;
     margin-right: 10%;
     float: right;
@@ -93,7 +92,6 @@ h2 {
     margin-top: 0%;
     background-color: #B40000;
     width: 100%;
-    height: 750px;
     overflow: hidden;
 }
 h3 {
@@ -107,8 +105,8 @@ h3 {
     margin-left: 10%;
 }
 #project2 {
-    height: 750px;
     overflow: hidden;
+    position: relative;
 }
 #p1 {
     font-family: open sans;
@@ -129,11 +127,12 @@ h3 {
     font-size: 2500%;
     /*    color: grey;*/
     color: #B40000;
-    padding-top: 19%;
+    position: absolute;
+    bottom: 0;
     margin: 0;
+    line-height: 75%;
 }
 #social {
-    height: 650px;
     background-color: rgb(172, 172, 172);
     position: relative;
 }
@@ -141,8 +140,8 @@ h3 {
     margin-top: 100px;
     margin-left: 11%;
     float: left;
-    height: 300px;
     width: 300px;
+    height: 300px;
     background-color: white;
     border-radius: 50%;
     position: relative;
