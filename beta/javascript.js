@@ -31,6 +31,10 @@ function init() {
     $(".80height").css("height", 0.8 * windowheight);
     $(".gheight").css("height", (((1 + Math.sqrt(5)) / 2) - 1) * windowheight);
 
+    $("#headerh").load("bestanden/Bovenbalk.html", function () {
+        $("#header").fadeOut(0);
+    });
+
 }
 
 $(window).resize(function () {
@@ -53,4 +57,13 @@ $(window).scroll(function () {
         var total = (-$(window).scrollTop() + ($("#project1").height() + $("#project1").offset().top)) / ($("#project1").height() + $("#project1").offset().top);
         $("#phone").css("marginTop", 27 * total + "%");
     }
+
+    if ($("#content1").height() * 0.75 < offset) {
+        $("#header").fadeIn("slow");
+    }
+
+    if ($("#content1").height() * 0.75 > offset) {
+        $("#header").fadeOut("slow");
+    }
+
 });

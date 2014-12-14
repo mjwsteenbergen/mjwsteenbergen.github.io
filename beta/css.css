@@ -46,15 +46,18 @@ body {
     font-family: Cardo;
 }
 #content2 {
-    margin-top: 10%;
+    padding-top: 10%;
     width: 100%;
     margin-bottom: 10%;
 }
 #titleBox {
     margin-top: 30%;
-    float: right;
+    /*    float: right;*/
+    right: 0;
     background-color: white;
     padding: 3%;
+    position: fixed;
+    z-index: 0;
 }
 h2 {
     font-family: open sans;
@@ -123,15 +126,14 @@ h3 {
     position: absolute;
 }
 .show2des {
-    float: right;
     font-family: open sans;
-    font-size: 2500%;
-    /*    color: grey;*/
+    font-size: 300%;
+    color: grey;
+    margin-left: 6%;
+    margin-top: 13%;
+}
+.code {
     color: #B40000;
-    position: absolute;
-    bottom: 0;
-    margin: 0;
-    line-height: 75%;
 }
 #social {
     background-color: rgb(172, 172, 172);
@@ -139,7 +141,7 @@ h3 {
 }
 .socitem {
     margin-top: 100px;
-    margin-left: 11%;
+    /*    margin-left: 14%;*/
     float: left;
     width: 300px;
     height: 300px;
@@ -187,4 +189,42 @@ h3 {
 p {
     margin: 0;
     padding: 0;
+}
+#headerh {
+    display: fixed;
+    z-index: 99;
+}
+#page {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(253, 251, 251, 1);
+}
+#p3 {
+    padding-top: 3%;
+    width: 100%;
+    text-align: center;
+    font-family: open sans;
+    font-size: 500%;
+    color: white;
+}
+.socitems .een {
+    float: left;
+    margin-left: 20%;
+}
+.socitems .drie {
+    float: right;
+    margin-right: 20%;
+}
+.socitems .twee {
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    /*    right: 50%;*/
+}
+#p2under {
+    font-family: Source Sans Pro;
+    font-size: 125%;
+    position: absolute;
+    top:35%;
+    right: 15%;
 }
