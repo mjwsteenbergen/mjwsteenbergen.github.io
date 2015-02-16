@@ -41,7 +41,7 @@
             <div id="content2">
                 <!--        <h2>Who am I?<div id=l1 class=line></div></h2>-->
 
-                <p class="description"><span class=desBig>Hi, </span> My name is Martijn Steenbergen
+                <p id="c2desc"><span class=desBig>Hi, </span> My name is Martijn Steenbergen
                     <br>I am a student at the TU Delft studying computer sciences. I know HTML, Java and C#.
                     <br>I am fascinated with design, how the world works and everything else.</p>
                 <!--        <h2>My Projects<div id=l2 class=line></div></h2>-->
@@ -50,75 +50,36 @@
             <div id=project1>
                 <div class="container">
                     <div class="row">
-                        <div class="eight columns">
-                            <h3 id=p1>Followshows</h3>
+                        <div class="one-half column">
+                            <h1 id=p1>Followshows</h1>
                             <p class=show1des>Easily keep track of when your shows are on next. Made for Windows Phone</p>
                         </div>
-                        <div class="four columns" class="height 50%;">
-                             <img src="bestanden/StartScreen.png" id=phone class="u-full-width"></img>
+                        <div class="one-half column" class="height 50%;">
+                            <img src="bestanden/StartScreen.png" id=phone class="u-full-width"></img>
                         </div>
                     </div>
                 </div>
-               
-                
+
+
             </div>
             <div id=project2>
+                
                 <div class="u-pull-right title2">
                     <h3 id=p2>nntn.nl</h3>
                     <p id=p2under>An ungoing quest to create a beautiful website</p>
                 </div>
 
+
                 <div class="container show2des">
-                    <div class=row>
-                        <div class="twelve columns">
-                            <p class=code>&lt;head&gt;</p>
-                        </div>
-                    </div>
-                    <div class=row>
-                        <div class="one column" style="color: white">x</div>
-                        <div class="eleven columns">
-                            <p><span class=code>&lt;title&gt;</span>Newnottakenname<span class=code>&lt;/title&gt;</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class=row>
-                        <div class="one column" style="color: white">x</div>
-                        <div class="eleven columns">
-                            <p class="code">&lt;script&gt;</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="two columns" style="color: white">x</div>
-                        <div class="ten columns">
-                            <p>$(function () {</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="three columns" style="color: white">x</div>
-                        <div class="one columns">
-                            <p>$(<span class=code>&quot;#header&quot;</span>).load(<span class=code>&quot;index.html&quot;</span>);</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="two columns" style="color: white">x</div>
-                        <div class="ten columns">
-                            <p>});</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="one column" style="color: white">x</div>
-                        <div class="eleven columns">
-                            <p class="code">&lt;/script&gt;</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="twelve columns">
-                            <p class="code">&lt;/head&gt;</p>
-                        </div>
-                    </div>
+                    <p class=code>&lt;head&gt;</p>
+                    <p style="text-indent: 1em;"><span class=code>&lt;title&gt;</span>Newnottakenname<span class=code>&lt;/title&gt;</span>
+                    </p>
+                    <p style="text-indent: 1em;" class="code">&lt;script&gt;</p>
+                    <p style="text-indent: 2em;">$(function () {</p>
+                    <p style="text-indent: 3em;">$(<span class=code>&quot;#header&quot;</span>).load(<span class=code>&quot;index.html&quot;</span>);</p>
+                    <p style="text-indent: 2em;">});</p>
+                    <p style="text-indent: 1em;" class="code">&lt;/script&gt;</p>
+                    <p style="text-indent: 0em;" class="code">&lt;/head&gt;</p>
 
 
 
@@ -147,9 +108,10 @@
                         </a>
 -->
                         <a href="mailto:nntn@nntn.nl">
-                            <div class=socitem2>
+                            <div class=socitem2 style="padding-bottom:10%;">
                                 <img src="bestanden/mail.png " class=u-max-full-width></img>
-                                <p class=socdesc style="margin-top:-10%; padding-bottom:10%;">Email</p>
+                                <p class=socdesc style="margin-top:-10%">Email</p>
+                                <div class="underline"></div>
                             </div>
 
                         </a>
@@ -163,6 +125,7 @@
                                 <div style="padding: 10%">
                                     <img src="bestanden/facebook.png " class=u-max-full-width></img>
                                     <p class=socdesc>Facebook</p>
+                                    <div class="underline"></div>
                                 </div>
                             </div>
 
@@ -178,6 +141,7 @@
                                 <div style="padding: 10%">
                                     <img src="bestanden/github.png " class=u-full-width></img>
                                     <p class=socdesc>Github</p>
+                                    <div class="underline"></div>
                                 </div>
 
                             </div>

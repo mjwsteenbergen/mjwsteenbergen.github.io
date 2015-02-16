@@ -66,12 +66,13 @@ h3 {
     width: 100%;
     margin-bottom: 10%;
 }
-.description {
+#c2desc {
     font-family: Source Sans Pro;
     font-size: 175%;
     margin-top: 2%;
     margin-bottom: 4%;
     width: 70%;
+    opacity: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -113,7 +114,7 @@ h2 {
     font-family: Source Sans Pro;
     font-size: 125%;
     color: white;
-    margin-left: 10%;
+/*    margin-left: 10%;*/
 }
 #project2 {
     overflow: auto;
@@ -125,28 +126,33 @@ h2 {
     font-size: 500%;
     color: white;
     margin-top: 17%;
-    margin-left: 10%;
+/*    margin-left: 10%;*/
     z-index: 9;
 }
 #p2 {
     font-family: open sans;
     font-size: 500%;
+    font-weight: bold;
     margin-right: 5%;
     margin-top: 10%;
 }
 .title2 {
     position: absolute;
+    font-weight: 300;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .show2des {
     font-family: open sans;
     font-size: 3em;
-    color: grey;
+    color: rgba(128, 128, 128, 0.3);
+    margin: 0;
 /*    margin-left: 6%;*/
 /*    margin-top: 13%;*/
 }
 .code {
-    color: #B40000;
+    color: rgba(180, 0, 0, 0.3);
 }
 #social {
     background-color: rgb(172, 172, 172);
@@ -173,6 +179,8 @@ h2 {
     animation: myfirst 0.8s;
     animation-direction: alternate;
     animation-fill-mode: both;
+    -webkit-animation: myfirst 0.8s alternate both;
+    
 /*    */
 }
 
@@ -265,6 +273,7 @@ p {
 }
 #p2under {
     font-family: Source Sans Pro;
+    font-weight: normal;
     font-size: 125%;
     margin-right: 5%;
     margin-top: 0%;
@@ -272,4 +281,16 @@ p {
 
 .socitems {
     padding-top: 10%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.underline {
+    height:1px; 
+    max-width: 66%; 
+    background-color: white;
+    position: relative;
+    margin: auto;
 }

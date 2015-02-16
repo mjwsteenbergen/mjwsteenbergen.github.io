@@ -40,6 +40,8 @@ function init() {
     $("#headerh").load("bestanden/Bovenbalk.html", function () {
         $("#header").fadeOut(0);
     });
+    
+    
 
 }
 
@@ -49,6 +51,12 @@ $(window).resize(function () {
 //    } else {
 //        $("body").css("width", "auto");
 //    }
+    if($(window).width() > 1200) {
+        $("#p1").css("font-size","500%");  
+    } else {
+        $("#p1").css("font-size","300%");
+    }
+    
     var windowheight = $(window).height();
 
     $(".oneheight").css("height", windowheight);
@@ -61,20 +69,25 @@ $(window).resize(function () {
 $(window).scroll(function () {
     var offset = $(window).scrollTop();
 
-    var tes1 = $(window).scrollTop() - ($("#project1").offset().top - $(window).height());
-    var tes2 = $(window).scrollTop() - ($("#project1").height() + $("#project1").offset().top);
+//    var tes1 = $(window).scrollTop() - ($("#project1").offset().top - $(window).height());
+//    var tes2 = $(window).scrollTop() - ($("#project1").height() + $("#project1").offset().top);
+//
+//    if (tes1 > 0 && tes2 < 0) {
+//        var total = (-$(window).scrollTop() + ($("#project1").height() + $("#project1").offset().top)) / ($("#project1").height() + $("#project1").offset().top);
+//        $("#phone").css("marginTop", 27 * total + "%");
+//    }
 
-    if (tes1 > 0 && tes2 < 0) {
-        var total = (-$(window).scrollTop() + ($("#project1").height() + $("#project1").offset().top)) / ($("#project1").height() + $("#project1").offset().top);
-        $("#phone").css("marginTop", 27 * total + "%");
-    }
-
+    
+    
     if ($("#content1").height() * 0.75 < offset) {
         $("#header").fadeIn("slow");
+        $("#c2desc").animate({opacity: 1},800);
     }
 
     if ($("#content1").height() * 0.75 > offset) {
         $("#header").fadeOut("slow");
     }
+    
+    
 
 });
