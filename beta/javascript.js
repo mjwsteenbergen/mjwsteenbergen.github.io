@@ -44,11 +44,11 @@ function init() {
 }
 
 $(window).resize(function () {
-    if ($(window).width() < 1000) {
-        $("body").css("width", "1000px");
-    } else {
-        $("body").css("width", "auto");
-    }
+//    if ($(window).width() < 1000) {
+//        $("body").css("width", "1000px");
+//    } else {
+//        $("body").css("width", "auto");
+//    }
     var windowheight = $(window).height();
 
     $(".oneheight").css("height", windowheight);
