@@ -143,19 +143,43 @@ h2 {
 }
 #social {
     background-color: rgb(172, 172, 172);
-    position: relative;
-    overflow: auto;
 }
 .socitem {
-    margin-bottom: 100px;
-    margin-left: 15%;
-    float: left;
-    width: 300px;
-    height: 300px;
+/*    margin-bottom: 100px;*/
+    width: 10%;
+    height: 10%;
+/*    padding: 50px;*/
     background-color: white;
     border-radius: 50%;
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
+
+.socitem2{
+    background-color: white;
+/*    border-radius: 20%;*/
+    margin-top: 10%;
+/*    animation: myfirst 1s;*/
+/*    animation-direction: reverse;*/
+    
+}
+.socitem2:hover{
+    animation: myfirst 0.8s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+/*    */
+}
+
+@-webkit-keyframes myfirst {
+    from {background-color: white;}
+    to {background-color: #B40000;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    from {background-color: white;}
+    to {background-color: #B40000;}
+} 
+
 .soccirc {
     background-color: #B40000;
     border-radius: 50%;
@@ -166,9 +190,12 @@ h2 {
     left: "50%";
 }
 .socimg {
-    width: 150px;
+    width: 50%;
+    margin: 2%;
+/*
     margin-left: 25%;
     margin-top: 25%;
+*/
 /*    position: absolute;*/
 }
 .socdesc {
@@ -176,16 +203,15 @@ h2 {
     top: 45%;
 /*    width: 100%;*/
     text-align: center;
-    position: relative;
-    visibility: collapse;
+/*    position: relative;*/
+/*    visibility: collapse;*/
     font-family: open sans;
     font-weight: 600;
     font-size: 200%;
 }
 #disclaimer {
     text-align: center;
-    margin-top: 10px;
-    position: absolute;
+    padding-top: 10%;
     bottom: 0;
     margin-bottom: 2px;
     width: 100%;
