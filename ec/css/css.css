@@ -1,0 +1,12 @@
+/*582140*/
+
+.cover {
+    background-color: #582140;
+    height: 100%;
+    overflow: auto;
+}
+
+.cover div div h1 {
+    color: white;
+    font-size: 500%;
+}

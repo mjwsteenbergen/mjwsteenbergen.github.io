@@ -7,6 +7,8 @@ $(document).ready(function () {
 
 function init() {
     $(".socitem").hover(function () {
+        $(this).children("div").children("p").css("visibility","visible");
+        $(this).children("div").css("visibility","visible");
         $(this).children("div").animate({
             height: "104%",
             width: "104%",
@@ -22,14 +24,18 @@ function init() {
             left: "50%"
 
         }, 400)
+        
+        $(this).children("div").children("p").css("visibility","hidden");
     });
+    
+    $(".socitem").children("div").animate({
+            height: "0%",
+            width: "0%",
+            top: "50%",
+            left: "50%"
 
-    var windowheight = $(window).height();
+        }, 3);
 
-    $(".oneheight").css("height", windowheight);
-    $(".23height").css("height", (2 / 3) * windowheight);
-    $(".80height").css("height", 0.8 * windowheight);
-    $(".gheight").css("height", (((1 + Math.sqrt(5)) / 2) - 1) * windowheight);
 
     $("#headerh").load("bestanden/Bovenbalk.html", function () {
         $("#header").fadeOut(0);
@@ -43,7 +49,12 @@ $(window).resize(function () {
     } else {
         $("body").css("width", "auto");
     }
+    var windowheight = $(window).height();
 
+    $(".oneheight").css("height", windowheight);
+    $(".23height").css("height", (2 / 3) * windowheight);
+    $(".80height").css("height", 0.8 * windowheight);
+    $(".gheight").css("height", (((1 + Math.sqrt(5)) / 2) - 1) * windowheight);
 });
 
 
