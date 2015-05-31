@@ -1,90 +1,125 @@
 <!DOCTYPE html>
+
 <head>
     <title>Newnottakenname</title>
-    
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-    <link rel="stylesheet" type="text/css" href="bestanden/CurrentTemplate.css">
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="stylesheet" type="text/css" href="bestanden/skeleton.css">
     <script src="http://code.jquery.com/jquery-2.1.0.js" type="text/javascript"></script>
     <script>
         $(function () {
             $("#header").load("bestanden/Bovenbalk.html");
         });
     </script>
-    <script src="bestanden/CurrentJavascript.js" type="text/javascript"></script>
+    <script src="javascript.js" type="text/javascript"></script>
     <link src="bestanden/Raleway-Regular.ttf" />
 </head>
 
-<html>
-
 <body>
-    <div class=titel>
-        <div class=titeltekst><span class="titelHoofd">M</span>ARTIJN <span class="titelHoofd">S</span>TEENBERGEN </div>
-        <div class=ondertitel>
-            <i>"We're all stories in the end. Just make it a good one."</i>
+    <div id=content1 class="hoog">
+        <div id=titleBox>
+            <h1 id=name>
+MARTIJN STEENBERGEN
+</h1>
+            <p id=quote>
+                " We 're all stories in the end. Just make it a good one."
+            </p>
         </div>
-        
+        <img src="bestanden/wiebenik.JPG" id=imgc1></img>
     </div>
-    
-    <div>
-     <div class="block1 contentB">
-        <img src="bestanden/wiebenik2.JPG" class=image id=img1>
-        <div class="contentBText block1" id=block1>
-            <div class="contentTitle cTr" >
-                    Who am I?
+    <div id=page>
+        <div style="margin-top: -5px">
+            <div id=content2>
+                <!-- <h2>Who am I?<div id=l1 class=line></div></h2>-->
+                <p id="c2desc"><span class=desBig>Hi, </span> My name is Martijn Steenbergen
+                    <br>I am a student at the TU Delft studying computer sciences. I know HTML, Java and C#.
+                    <br>I am fascinated with design, how the world works and everything else.</p>
+                <!-- <h2>My Projects<div id=l2 class=line></div></h2>-->
             </div>
-            <div class="contentText cTr">
-                    I am a student from the Netherlands. I know HTML, Java and C#. I am fascinated with design, how the world works and everything else.
+            <div id=project1>
+                <div class="container">
+                    <div class="row">
+                        <div class="one-half column">
+                            <h1 id=p1>Followshows</h1>
+                            <p class=show1des>Easily keep track of when your shows are on next. Made for Windows Phone</p>
+                        </div>
+                        <div class="one-half column" class="height 50%;">
+                            <img src="bestanden/StartScreen.png" id=phone class="u-full-width"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id=project2>
+                <div class="u-pull-right title2">
+                    <h3 id=p2>nntn.nl</h3>
+                    <p id=p2under>An ungoing quest to create a beautiful website</p>
+                </div>
+                <div class="container show2des">
+                    <p class=code>&lt;head&gt;</p>
+                    <p style="text-indent: 1em;"><span class=code>&lt;title&gt;</span>Newnottakenname<span class=code>&lt;/title&gt;</span>
+                    </p>
+                    <p style="text-indent: 1em;" class="code">&lt;script&gt;</p>
+                    <p style="text-indent: 2em;">$(function () {</p>
+                    <p style="text-indent: 3em;">$(<span class=code>&quot;#header&quot;</span>).load(<span class=code>&quot;index.html&quot;</span>);</p>
+                    <p style="text-indent: 2em;">});</p>
+                    <p style="text-indent: 1em;" class="code">&lt;/script&gt;</p>
+                    <p style="text-indent: 0em;" class="code">&lt;/head&gt;</p>
+                </div>
+            </div>
+        </div>
+        <div id=social>
+            <div class=container>
+                <div class=row>
+                    <h3 id=p3>Contact me</h3>
+                </div>
+                <div class="row">
+                    <div class="one-third column">
+                        <!--
+<div class=soccirc>
+</div>
+<a class="socitem" href="mailto:nntn@nntn.nl "></a>
+</a>
+-->
+                        <a href="mailto:nntn@nntn.nl">
+                            <div class=socitem2 style="padding-bottom:10%;">
+                                <img src="bestanden/mail.png " class=u-max-full-width></img>
+                                <p class=socdesc style="margin-top:-10%">Email</p>
+                                <div class="underline"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="one-third column">
+                        <!-- <a class=socitem >-->
+                        <a href="https://www.facebook.com/martijn.steenbergen.353" target="_blank ">
+                            <div class=socitem2>
+                                <div style="padding: 10%">
+                                    <img src="bestanden/facebook.png " class=u-max-full-width></img>
+                                    <p class=socdesc>Facebook</p>
+                                    <div class="underline"></div>
+                                </div>
+                            </div>
+                        </a>
+                        </a>
+                    </div>
+                    <div class="one-third column">
+                        <a href="https://github.com/newnottakenname " target="_blank ">
+                            <div class=socitem2>
+                                <div style="padding: 10%">
+                                    <img src="bestanden/github.png " class=u-full-width></img>
+                                    <p class=socdesc>Github</p>
+                                    <div class="underline"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id=disclaimer class=row>
+                    Newnottakenname | Sponsored By: Jenneke Ringnalda | Hosted by: Github | All rights reserved
+                </div>
             </div>
         </div>
     </div>
-    
-    <div class="block2 contentB block2T">
-        <img src="bestanden/TuDelftLogo.png" class="image fr" id=img2>
-        <div class="contentBText block2 blok2Txt" id=block2>
-            <div class="contentTitle cTl">
-                    What do I do?
-                </div>
-                <div class="contentText cTl">
-                    Currently I am studying Computer science and engineering at the TU Delft
-                </div>
-        </div>
-    </div>  
-
-    
-    <div class="contentB">
-        <div class="block3 contentTitle">
-            What am I working on?
-        </div>
-        <a href="https://github.com/newnottakename/newnottakename.github.io">
-            <table class=project><tr>
-                <td class=projectTitle>NNTN</td>
-                <td>
-                    <div class=projectSubtitle>This website</div>
-                    <div class=projectDescription>has been completely created by me and is available on github</div>
-                </td>
-            </tr></table>
-        </a>
-        <a href="http://nntn.nl/fsWP/">
-            <table class=project>
-                <tr><td class=projectTitle>
-                    <img src="bestanden/Followshows-Logo.png" class=projectTitleim></img>
-                </td>
-                <td>
-                    <div class=projectSubtitle>Followshows for Windows Phone</div> 
-                    <div class=projectDescription>is a way to keep track of your favorite shows. Even on the go.</div>
-                    </td>
-                </tr>
-            </table>
-            
-            
-        </a>
-    </div>
-    <div class=copyr>
-        <p class=copyrtext>Newnottakenname | Sponsored By: Jenneke Ringnalda | Hosted by: Github | All rights reserved</p>
-    </div>
-    <div id=header>
-    </div>
-</body></html>
+    <div id=headerh></div>
+</body>

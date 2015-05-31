@@ -1,112 +1,119 @@
 <!DOCTYPE html>
+
 <head>
     <script src="http://code.jquery.com/jquery-2.1.0.js" type="text/javascript"></script>
-	<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans|Cabin' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans|Cabin' rel='stylesheet' type='text/css'></link>
+    <link href='http://fonts.googleapis.com/css?family=Homenaje' rel='stylesheet' type='text/css'></link>
 </head>
 
 <script>
-$( document ).ready(function() {
-    resize();
-    init();
-});
+    $(document).ready(function () {
+        resize();
+        init();
+    });
 
-$( window ).resize(function(){
-    resize()
-});
+    $(window).resize(function () {
+        resize()
+    });
 
-function resize(){
-    height2 = $(window).height()*0.1;
-    if (height2 < 50) {height2 = 50};
-    $(".header").css('height', height2 + 'px');
-    height = $(".header").height();
-    $(".headerbuttontext").css('font-size', height/3.5 + 'px');
-    $(".headertekst").css('font-size', height*2/5 + 'px');
-    $(".underheader").css('height', height);
-}
-
-function init(){
-    var cook = document.cookie;
-    if (cook == null){
-        $(".header").css({
-            marginTop: -$(".header").height()
-        })
-        $(".header").animate({"marginTop": "+="+$(".header").height()});
-        document.cookie="Hello"
+    function resize() {
+        height2 = $(window).height() * 0.075;
+        if (height2 < 50) {
+            height2 = 50
+        };
+        $("#header").css('height', height2 + 'px');
+        height = $("#header").height();
+        $(".headerbuttontext").css('font-size', height / 3.5 + 'px');
+        $(".headertekst").css('font-size', height * 2 / 5 + 'px');
+        $(".underheader").css('height', height);
     }
-}
+
+    function init() {
+        var cook = document.cookie;
+        if (cook == null) {
+            $("#header").css({
+                marginTop: -$("#header").height()
+            })
+            $("#header").animate({
+                "marginTop": "+=" + $("#header").height()
+            });
+            document.cookie = "Hello"
+        }
+    }
 </script>
 
 <style>
-h1{
-	color: 	rgb(75,0,0);
-	font-size: 267%;
-	font-family: Georgia;
-	margin-top: 3%
-}
-
-a{
-    text-decoration:none;
-    color: inherit;
-}
-
-p {
-	margin: 0pt;
-}
-
-.header{
-	background-color: rgb(180,0,0);
-    height: 10%;
-	width: 100%;
-	position: fixed;
-	top: 0px;
-	overflow: auto;
-    box-shadow: 0px 2px 1px 0.5px #191919;
-}
-
-.headertekst{
-	color: white;
-	font-family: 'Cabin';
-	margin-left: 16%;
-	margin-right: 5%;
-	float: left;
-    line-height: 250%;
-}
-
-.headerbutton{
-	float:left;
-	margin-left: 2%;
-	overflow: hidden;
-	height: 100%;
-    background-color: rgb(160,0,0);
-}
-
-.headerbutton:hover{
-	background-color: rgb(140, 0, 0);
-}
-
-.headerbuttontext{
-	color: white;
-	font-family: 'Homenaje';
-	font-size: 150%;
-	line-height: 350%;
-	padding-left: 20pt;
-    padding-right: 20pt;
-	float: left;
-}
+    h1 {
+        color: rgb(75, 0, 0);
+        font-size: 267%;
+        font-family: Georgia;
+        margin-top: 3%
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    p {
+        margin: 0pt;
+    }
+    #header {
+        background-color: rgba(180, 0, 0, 0.95);
+        height: 10%;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        overflow: auto;
+        z-index: 99;
+    }
+    .headertekst {
+        color: white;
+        font-family: 'Cabin';
+        margin-left: 16%;
+        margin-right: 5%;
+        float: left;
+        line-height: 250%;
+    }
+    .headerbutton {
+        float: left;
+        margin-left: 2%;
+        overflow: hidden;
+        height: 100%;
+        background-color: rgb(160, 0, 0);
+    }
+    .headerbutton:hover {
+        background-color: rgb(140, 0, 0);
+    }
+    .headerbuttontext {
+        color: white;
+        font-family: 'Homenaje';
+        font-size: 150%;
+        line-height: 350%;
+        padding-left: 20pt;
+        padding-right: 20pt;
+        float: left;
+    }
 </style>
-	
-<html><body>
-	<div class=header>
-		<p class=headertekst><a href="http://nntn.nl/">NNTN</a></p>
-		<div class=headerbutton><a href="http://nntn.nl/uni/">
-			<p class=headerbuttontext> UNIVERSITEIT </p>
-		</div></a>
-<!--
-		<div class=headerbutton><a href="http://beta.nntn.nl/">
-			<p class=headerbuttontext> BETA VERSIE </p>
-		</div></a>
--->
-	</div>
+
+<html>
+
+<body>
+    <div id=header>
+        <p class=headertekst><a href="http://nntn.nl/">NNTN</a>
+        </p>
+        <div class=headerbutton>
+            <a href="http://nntn.nl/uni/">
+                <p class=headerbuttontext>UNIVERSITEIT</p>
+        </div>
+        </a>
+
+        <div class=headerbutton>
+            <a href="http://nntn.nl/beta/">
+                <p class=headerbuttontext>BETA VERSIE</p>
+        </div>
+        </a>
+
+    </div>
     <!--<div class=underheader></div>-->
-</body></html>
+</body>
+
+</html>
