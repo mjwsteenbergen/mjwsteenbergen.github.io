@@ -80,6 +80,7 @@ h3 {
 #c2desc {
     font-family: Source Sans Pro;
     font-size: 175%;
+    font-weight: 300;
     margin-top: 2%;
     margin-bottom: 4%;
     width: 70%;
@@ -127,6 +128,7 @@ h2 {
 .show1des {
     font-family: Source Sans Pro;
     font-size: 125%;
+    font-weight: 300;
     color: white;
     /* margin-left: 10%;*/
 }
@@ -172,11 +174,11 @@ h2 {
 }
 
 .code {
-    color: rgba(180, 0, 0, 0.3);
+    color: rgba(180, 0, 0, 1);
 }
 
 #social {
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(100, 100, 100);
 }
 
 .socitem {
@@ -288,7 +290,9 @@ p {
 #page {
     position: relative;
     z-index: 1;
-    background-color: rgba(253, 251, 251, 1);
+/*    background-color: rgba(253, 251, 251, 1);*/
+    background-color: rgb(10,10,10);
+    color: white;
 }
 
 #p3 {
