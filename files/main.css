@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    --background: rgba(253, 251, 251, 1);
+    --primary: #B40000;
+    --primary-light: #DC0E0E;
+    --primary-dark: #660000;
+    --secondary: rgb(199, 199, 199);
+    font-family: 'Source Sans Pro', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --title-font: 'Open Sans', sans-serif
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--title-font);
+}
+
+h2 {
+    font-family: var(--title-font);    
+}
+
+@media screen and (max-width: 900px)
+{
+    #cover-plaque {
+        width: 100%;
+        bottom: 0;
+        color: var(--background);
+        background-color: var(--primary);
+    }
+
+    #aboutme p {
+        padding: 40px;
+        font-size: 25px;
+    }
+
+    #aboutme p span {
+        font-size: 80px;
+    }
+
+    #projects h1 {
+        margin-bottom: 0;
+    }
+
+    #contactmecontainer img {
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 900px)
+{
+    #cover-plaque {
+        bottom: 20%;
+        right: 0;
+        background-color: var(--background);    
+    }
+
+    #aboutme p {
+        padding: 10%;
+        font-size: 30px;
+    }
+
+    #aboutme p span {
+        font-size: 150px;
+    }
+
+    .project {
+        width: 400px;
+    }
+
+    #projects h1 {
+        padding-left: 40px !important;
+    }
+
+    #projects {
+        padding-top: 100px !important;
+        padding-bottom: 100px !important;
+    }
+
+    #contactmecontainer {
+        padding: 50px;
+    }
+
+    #contactmecontainer img {
+        height: 70px;
+    }
+}
+
+
+
+body {
+    background-color: var(--background);
+    height: 100%;
+    margin: 0;
+}
+
+#cover {
+    height: 100vh;
+    background-image: url(/files/me.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#cover-plaque {
+    position: absolute;
+    
+    font-family: var(--title-font);
+    font-size: 30px;
+}
+
+#cover-plaque div {
+    padding: 20px;
+}
+
+#projects {
+    background-color: var(--primary);
+    color: var(--background);    
+}
+
+#projects h1 {
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+#project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.project {
+    background-color: var(--primary-light);
+
+    color: var(--background);
+    text-decoration-line: none;
+
+    padding: 20px;
+    margin: 10px;
+
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+#contactme {
+    background-color: var(--background);
+    padding: 20px;
+}
+
+#contactme h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contactmecontainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#copyright {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 2px;
+    color: var(--background);
+}

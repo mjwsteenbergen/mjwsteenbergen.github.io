@@ -1,125 +1,79 @@
 <!DOCTYPE html>
+<html>
 
 <head>
-    <title>Newnottakenname</title>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cardo' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css.css">
-    <link rel="stylesheet" type="text/css" href="bestanden/skeleton.css">
-    <script src="http://code.jquery.com/jquery-2.1.0.js" type="text/javascript"></script>
-    <script>
-        $(function () {
-            $("#header").load("bestanden/Bovenbalk.html");
-        });
-    </script>
-    <script src="javascript.js" type="text/javascript"></script>
-    <link src="bestanden/Raleway-Regular.ttf" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NNTN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="files/main.css" />
+    <script src="main.js"></script>
 </head>
 
 <body>
-    <div id=content1 class="hoog">
-        <div id=titleBox>
-            <h1 id=name>
-MARTIJN STEENBERGEN
-</h1>
-            <p id=quote>
-                " We 're all stories in the end. Just make it a good one."
-            </p>
-        </div>
-        <img src="bestanden/wiebenik.jpeg" id=imgc1></img>
-    </div>
-    <div id=page>
-        <div style="margin-top: -5px">
-            <div id=content2>
-                <!-- <h2>Who am I?<div id=l1 class=line></div></h2>-->
-                <p id="c2desc"><span class=desBig>Hi, </span> My name is Martijn Steenbergen
-                    <br>I am a student at the TU Delft studying computer sciences. I know HTML, Java and C#.
-                    <br>I am fascinated with design, how the world works and everything else.</p>
-                <!-- <h2>My Projects<div id=l2 class=line></div></h2>-->
-            </div>
-            <div id=project1>
-                <div class="container">
-                    <div class="row">
-                        <div class="one-half column">
-                            <h1 id=p1>Followshows</h1>
-                            <p class=show1des>Easily keep track of when your shows are on next. Made for Windows Phone</p>
-                        </div>
-                        <div class="one-half column" class="height 50%;">
-                            <img src="bestanden/StartScreen.png" id=phone class="u-full-width"></img>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id=project2>
-                <div class="u-pull-right title2">
-                    <h3 id=p2>nntn.nl</h3>
-                    <p id=p2under>An ongoing quest to create a beautiful website</p>
-                </div>
-                <div class="container show2des">
-                    <p class=code>&lt;head&gt;</p>
-                    <p style="text-indent: 1em;"><span class=code>&lt;title&gt;</span>Newnottakenname<span class=code>&lt;/title&gt;</span>
-                    </p>
-                    <p style="text-indent: 1em;" class="code">&lt;script&gt;</p>
-                    <p style="text-indent: 2em;">$(function () {</p>
-                    <p style="text-indent: 3em;">$(<span class=code>&quot;#header&quot;</span>).load(<span class=code>&quot;index.html&quot;</span>);</p>
-                    <p style="text-indent: 2em;">});</p>
-                    <p style="text-indent: 1em;" class="code">&lt;/script&gt;</p>
-                    <p style="text-indent: 0em;" class="code">&lt;/head&gt;</p>
-                </div>
-            </div>
-        </div>
-        <div id=social>
-            <div class=container>
-                <div class=row>
-                    <h3 id=p3>Contact me</h3>
-                </div>
-                <div class="row">
-                    <div class="one-third column">
-                        <!--
-<div class=soccirc>
-</div>
-<a class="socitem" href="mailto:nntn@nntn.nl "></a>
-</a>
--->
-                        <a href="mailto:nntn@nntn.nl">
-                            <div class=socitem2 style="padding-bottom:10%;">
-                                <img src="bestanden/mail.png " class=u-max-full-width></img>
-                                <p class=socdesc style="margin-top:-10%">Email</p>
-                                <div class="underline"></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="one-third column">
-                        <!-- <a class=socitem >-->
-                        <a href="https://www.facebook.com/martijn.steenbergen.353" target="_blank ">
-                            <div class=socitem2>
-                                <div style="padding: 10%">
-                                    <img src="bestanden/facebook.png " class=u-max-full-width></img>
-                                    <p class=socdesc>Facebook</p>
-                                    <div class="underline"></div>
-                                </div>
-                            </div>
-                        </a>
-                        </a>
-                    </div>
-                    <div class="one-third column">
-                        <a href="https://github.com/newnottakenname " target="_blank ">
-                            <div class=socitem2>
-                                <div style="padding: 10%">
-                                    <img src="bestanden/github.png " class=u-full-width></img>
-                                    <p class=socdesc>Github</p>
-                                    <div class="underline"></div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div id=disclaimer class=row>
-                    Newnottakenname | Sponsored By: Jenneke Ringnalda | Hosted by: Github | All rights reserved
-                </div>
+    <div id=cover>
+        <div id=cover-plaque>
+            <div>
+                Martijn Steenbergen
             </div>
         </div>
     </div>
-    <div id=headerh></div>
+    <div id=aboutme>
+        <p>
+            <span>Hi,</span> My name is Martijn Steenbergen.
+            <br> I am a student at the TU Delft studying computer sciences. I do everything with software engineering.
+            <br> I am fascinated with design, how the world works and everything else.
+        </p>
+    </div>
+    <div id=projects>
+        <h1>My Projects</h1>
+        <div id=project-container>
+            <a class=project href="https://github.com/mjwsteenbergen/mjwsteenbergen.github.io" target="blank">
+                <h2>NNTN</h2>
+                <p>The ongoing quest to create a beautiful website</p>
+            </a>
+            <a class=project href="https://gpd.today/" target="blank">
+                <h2>Getting projects done today</h2>
+                <p>For the final bachelors project a cross-platform app was built for iOS and Android built with Ionic2 and
+                    Angular 2 while using scrum to build a great experience. The app features gamification and offline storage</p>
+            </a>
+            <a class=project href="https://github.com/mjwsteenbergen/TelegramBot" target="blank">
+                <h2>TelegramBot</h2>
+                <p>A bot that can be deployed on azure that will respond to all your queries. It is stateless, but is able to
+                    keep data using uri's</p>
+            </a>
+            <a class=project href="https://github.com/mjwsteenbergen/FollowshowsWP" target="blank">
+                <h2>Followshows</h2>
+                <p>As a side project, to get some practical experience with the Windows Phone platform, I created a 3rd party
+                    app Followshows for Windows Phone. Followshows is an existing service to track your favorite TV-shows.
+                    The app features full integration with the service, offline storage and is completely open source on
+                    GitHub.</p>
+            </a>
+        </div>
+    </div>
+    <div id=contactme>
+        <h1>Links</h1>
+
+        <div id=contactmecontainer>
+            <a href="https://www.linkedin.com/in/mjwsteenbergen/" target="blank">
+                <img src="./files/In-2C-128px-R.png">
+            </a>
+            <a href="https://twitter.com/newnottakenname" target="blank">
+                <img src="./files/Twitter_Logo_Blue.png">
+            </a>
+            <a href="http://t.me/newnottakenname" target="blank">
+                <img src="./files/Telegram.png">
+            </a>
+            <a href="https://github.com/mjwsteenbergen/" target="blank">
+                <img src="./files/github.png">
+            </a>
+
+        </div>
+
+    </div>
+    <div id=copyright>
+        Newnottakenname | Sponsored By: Jenneke Ringnalda | Hosted by: Github | All rights reserved
+    </div>
 </body>
+
+</html>
