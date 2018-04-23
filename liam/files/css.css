@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto:300|Berkshire Swash');
+
+body {
+    background-color: black;
+    margin: 0;
+    font-family: Roboto, Arial, Helvetica, sans-serif
+}
+
+h1 {
+    font-family: 'Permanent Marker', Arial, Helvetica, sans-serif
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#pageContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#cover h1 {
+    position: absolute;
+    bottom: 20%;
+    padding: 20px;
+    padding-left: 10%;
+    font-size: 60px;
+    background-color: rgb(112, 44, 131, 0.7);
+}
+
+#cover {
+    color: white;
+}
+
+#availability {
+    margin-top: 66vh;
+}
+
+.page {
+    margin-top: 100vh;
+    height: 100vh;
+    /* background-color: #874699; */
+    background-color: rgb(137, 71, 155, 0.8);
+    width: 100%;
+}
+
+#ticket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 66vh;
+}
+
+.page h1 {
+    font-size: 70px;
+    background-color: #702C83;
+    font-family: "Berkshire Swash";
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;    
+}
+
+#ticket p {
+    color: white;
+    font-size: 20px;
+}
+
+#availability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#availability h1 {
+    text-align: center;
+    font-family: "Berkshire Swash";    
+    color: white;
+}
+
+#availability embed{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width: 900px)
+{
+    #cover h1 {
+        font-size: 30px !important;
+    }
+
+    .page h1 {
+        font-size: 30px !important;
+    }
+}
