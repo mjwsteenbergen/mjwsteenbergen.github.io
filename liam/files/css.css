@@ -46,7 +46,7 @@ div {
     margin-top: 100vh;
     height: 100vh;
     /* background-color: #874699; */
-    background-color: rgb(137, 71, 155, 0.8);
+    background-color: rgba(137, 71, 155, 0.8);
     width: 100%;
 }
 
@@ -56,7 +56,7 @@ div {
     padding: 20px;
     padding-left: 10%;
     font-size: 60px;
-    background-color: rgb(112, 44, 131, 0.7);
+    background-color: rgba(112, 44, 131, 0.7);
 }
 
 #cover {
