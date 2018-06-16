@@ -24,6 +24,18 @@ div {
     overflow: hidden;
     pointer-events: none;
 }
+#background-player {
+    width: 100%;
+    height: 100%;
+}
+
+#confetti {
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+}
 
 #pageContainer {
     display: flex;
@@ -34,7 +46,7 @@ div {
     margin-top: 100vh;
     height: 100vh;
     /* background-color: #874699; */
-    background-color: rgb(137, 71, 155, 0.8);
+    background-color: rgba(137, 71, 155, 0.8);
     width: 100%;
 }
 
@@ -44,7 +56,7 @@ div {
     padding: 20px;
     padding-left: 10%;
     font-size: 60px;
-    background-color: rgb(112, 44, 131, 0.7);
+    background-color: rgba(112, 44, 131, 0.7);
 }
 
 #cover {
@@ -70,7 +82,7 @@ div {
     font-family: "Berkshire Swash";
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;    
+    color: white;
 }
 
 #ticket p {
@@ -86,13 +98,18 @@ div {
 
 #availability h1 {
     text-align: center;
-    font-family: "Berkshire Swash";    
+    font-family: "Berkshire Swash";
     color: white;
 }
 
 #availability embed{
     margin-left: auto;
     margin-right: auto;
+}
+
+#doodle {
+    width: 900px;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 900px)
