@@ -1,0 +1,87 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body {
+    --background: rgba(253, 251, 251, 1);
+    --primary: #B40000;
+    --primary-light: #DC0E0E;
+    --primary-dark: #660000;
+    --secondary: rgb(199, 199, 199);
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --title-font: 'Inter UI', sans-serif
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--title-font);
+    color: var(--primary);
+    font-size: 80pt;
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--title-font);    
+    font-size: 40pt;
+}
+
+
+
+
+body {
+    background-color: var(--background);
+    height: 100%;
+    margin: 0;
+
+}
+
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 10px;
+}
+
+#email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    font-size: 30pt;
+    font-family: "Inter UI";
+    text-align: center;
+    background: transparent;
+}
+
+.hide {
+    display: none !important;
+}
+
+#email-check {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 12px;
+    margin-left: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+p {
+    font-size: 15pt;
+}

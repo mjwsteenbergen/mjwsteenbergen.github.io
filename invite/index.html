@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Invite to event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="noid" class="hide">
+        <h1>No event id was provided. <br> Sorry</h2>
+    </div>
+    <div id="content">
+        <h1>You have been invited to <span id=event-name>an event</span></h1>
+            <div id="email">
+                <h2>Please write down your email</h2>
+                <input id="forms" type="text" placeholder="example@example.org" onkeydown="this.submit" onsubmit="submit">
+            </div>
+            <div id="email-check">
+                <p>Your email is <span id="email-value">insert email</span></p>
+                <button id="email-change">change</button>
+            </div>
+        </div>
+</body>
+</html>
