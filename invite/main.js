@@ -8,7 +8,25 @@ function getLocationId() {
 function invite() {
     let email = localStorage.getItem("invite-email")
     if (email !== null && getLocationId() !== null) {
-        console.log("insert invite fetch")
+        if (localStorage.getItem("latest-invite") === getLocationId()) {
+            document.getElementById("invite-status").innerHTML = " already ";
+        } else {
+            var url = 'https://personalfunctions.azurewebsites.net/api/InviteFunction?id=' + getLocationId() + "&email=" + email;
+            console.log(url);
+            fetch(url, {
+                method: "POST"
+            })
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error("HTTP error, status = " + response.statusText);
+                }
+                localStorage.setItem("latest-invite", getLocationId());
+                return response.text();
+            })
+            .catch(error => {
+                console.error(error);
+            });
+        }
     }
 }
 
@@ -20,10 +38,11 @@ function fetchName() {
             if (!response.ok) {
                 throw new Error("HTTP error, status = " + response.statusText);
             }
-            response.text().then(function (myJson) {
-                console.log(myJson);
-                //     document.getElementById("event-name").innerHTML = myJson.subject;
-            })
+            return response.json();
+        }).then(function (myJson) {
+            console.log(myJson);//event-time
+            document.getElementById("event-name").innerHTML = "<br>\"" + myJson.subject + "\"";
+            document.getElementById("event-time").innerHTML = new Date(myJson.start).toUTCString();
         })
         .catch(error => {
             console.error(error);
@@ -67,6 +86,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     
     document.getElementById("email-change").onclick = function (e) {
         localStorage.removeItem("invite-email");
+        localStorage.removeItem("latest-invite");
         updateEmail();
     }
 });

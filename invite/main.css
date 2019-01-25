@@ -1,5 +1,15 @@
 @import url('https://rsms.me/inter/inter-ui.css');
 
+@media (max-height: 800px) {
+    :root {
+        --h1-size: 40pt;
+        --h2-size: 20pt;
+        --h3-size: 17pt;
+        --input-size: 17pt;
+    }
+
+}
+
 body {
     --background: rgba(253, 251, 251, 1);
     --primary: #B40000;
@@ -18,59 +28,26 @@ div {
 h1 {
     font-family: var(--title-font);
     color: var(--primary);
-    font-size: 80pt;
+    font-size: var(--h1-size, 80pt);
     margin: 0px;
     text-align: center;
 }
 
 h2 {
     font-family: var(--title-font);    
-    font-size: 40pt;
+    font-size: var(--h2-size, 40pt);
 }
 
-
-
-
-body {
-    background-color: var(--background);
-    height: 100%;
-    margin: 0;
-
-}
-
-
-#content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    padding: 10px;
-}
-
-#email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+h3 {
+    font-size: var(--h3-size, 20pt);
 }
 
 input {
     border: none;
-    font-size: 30pt;
+    font-size: var(--input-size, 30pt);
     font-family: "Inter UI";
     text-align: center;
     background: transparent;
-}
-
-.hide {
-    display: none !important;
-}
-
-#email-check {
-    display: flex;
-    align-items: center;
-    justify-self: flex-end;
 }
 
 button {
@@ -82,6 +59,32 @@ button {
     font-weight: bold;
 }
 
-p {
-    font-size: 15pt;
+.hide {
+    display: none !important;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    text-align: center;
+
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    min-height: 24em;
+    justify-content: center;
+    height: 100vh;
+}
+
+#content {
+    padding: 10px;
+}
+
+#email-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }

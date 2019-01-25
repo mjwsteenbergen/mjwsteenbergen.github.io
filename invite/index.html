@@ -9,11 +9,13 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div id="noid" class="hide">
-        <h1>No event id was provided. <br> Sorry</h2>
-    </div>
-    <div id="content">
-        <h1>You have been invited to <span id=event-name>an event</span></h1>
+    <div id=wrapper>
+        <div id="noid" class="hide">
+            <h1>No event id was provided. <br> Sorry</h2>
+        </div>
+        <div id="content">
+            <h1>You have <span id=invite-status></span> been invited to <span id=event-name>an event</span></h1>
+            <h3 id=event-time></h2>
             <div id="email">
                 <h2>Please write down your email</h2>
                 <input id="forms" type="text" placeholder="example@example.org" onkeydown="this.submit" onsubmit="submit">
@@ -23,5 +25,6 @@
                 <button id="email-change">change</button>
             </div>
         </div>
+    </div>
 </body>
 </html>
