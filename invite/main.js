@@ -43,6 +43,7 @@ function fetchName() {
             console.log(myJson);//event-time
             document.getElementById("event-name").innerHTML = "<br>\"" + myJson.subject + "\"";
             document.getElementById("event-time").innerHTML = new Date(myJson.start).toUTCString();
+            setSEO(myJson.subject);
         })
         .catch(error => {
             console.error(error);
@@ -58,6 +59,36 @@ function updateEmail() {
         document.getElementById("email").setAttribute("class", "");
         document.getElementById("email-check").setAttribute("class", "hide")
     }
+}
+
+function setSEO(eventName) {
+    var twitterTitle = document.createElement("meta");
+    twitterTitle.setAttribute("name", "twitter:title")
+    twitterTitle.setAttribute("content", eventName);
+    document.head.appendChild(twitterTitle);
+
+    
+    var twitterDescription = document.createElement("meta");
+    twitterDescription.setAttribute("name", "twitter:description")
+    twitterDescription.setAttribute("content", "You have been invited to " + eventName);
+    document.head.appendChild(twitterDescription);
+
+    var ogDescription = document.createElement("meta");
+    ogDescription.setAttribute("name", "og:description")
+    ogDescription.setAttribute("content", "You have been invited to " + eventName);
+    document.head.appendChild(ogDescription);
+
+    var description = document.createElement("meta");
+    description.setAttribute("name", "description")
+    description.setAttribute("content", "You have been invited to " + eventName);
+    document.head.appendChild(description);
+
+    var ogTitle = document.createElement("meta");
+    ogTitle.setAttribute("name", "og:title")
+    ogTitle.setAttribute("content", eventName);
+    document.head.appendChild(ogTitle);
+
+    document.title = eventName;
 }
 
 document.addEventListener("DOMContentLoaded", function (event) {
