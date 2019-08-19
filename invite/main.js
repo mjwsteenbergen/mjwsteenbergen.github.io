@@ -42,7 +42,7 @@ function fetchName() {
         }).then(function (myJson) {
             console.log(myJson);//event-time
             document.getElementById("event-name").innerHTML = "<br>\"" + myJson.subject + "\"";
-            document.getElementById("event-time").innerHTML = new Date(myJson.start).toUTCString();
+            document.getElementById("event-time").innerHTML = new Date(myJson.start).toString();
             setSEO(myJson.subject);
         })
         .catch(error => {
