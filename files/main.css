@@ -6,14 +6,26 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Geometria';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Geometria'), url('Geometria-Medium.woff') format('woff');
+}
+
+/* 	
+	#890000
+	#540000
+	#240000 */
 body {
     --background: rgba(253, 251, 251, 1);
-    --primary: #B40000;
-    --primary-light: #DC0E0E;
-    --primary-dark: #660000;
+    --primary: #b40000;
+    --primary-light: #ff0101;
+    --primary-dark: #680000;
+    --primary-slightly-dark: #a20000;
     --secondary: rgb(199, 199, 199);
     font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --title-font: 'Geometria Light', sans-serif
+    --title-font: 'Geometria', 'Geometria-light', sans-serif
 }
 
 div {
@@ -26,7 +38,8 @@ h1 {
 }
 
 h2 {
-    font-family: var(--title-font);    
+    font-family: var(--title-font);
+    font-weight: bold;
 }
 
 
@@ -49,10 +62,12 @@ body {
     
     font-family: var(--title-font);
     font-size: 30px;
+    color: var(--background);
 }
 
 #cover-plaque div {
     padding: 20px;
+    background-color: var(--primary);
 }
 
 #aboutme p {
@@ -65,7 +80,7 @@ body {
 }
 
 #projects h1 {
-    padding: 20px;
+    padding: 5px;
     padding-bottom: 0;
 }
 
@@ -76,25 +91,53 @@ body {
     align-content: space-between;
 
     padding: 10px;
-    padding-bottom: 20px;
 }
 
 .project {
-    background-color: var(--primary-light);
-
     color: var(--background);
+
+    background-color: var(--primary-slightly-dark);
     text-decoration: none;
 
-    padding: 20px;
+    padding: 40px;
     margin: 10px;
 
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
+    display: flex;
+    align-items: center;
+}
+
+.project .desc {
+    padding: 20px;
+    display: inline;
+}
+
+.project a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.project .img {
+    min-width: 150px;
+    min-height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project:hover {
+    background-color: var(--primary-dark);
 }
 
 
 #contactme {
     background-color: var(--background);
     padding: 20px;
+}
+
+#contactme img {
+    
 }
 
 #contactme h1 {
@@ -108,7 +151,7 @@ body {
 }
 
 #copyright {
-    background-color: var(--primary);
+    background-color: var(--primary-dark);
     text-align: center;
     padding: 2px;
     color: var(--background);
@@ -173,8 +216,8 @@ body {
     }
 
     #projects {
-        padding-top: 100px !important;
-        padding-bottom: 100px !important;
+        padding-top: 75px !important;
+        padding-bottom: 75px !important;
     }
 
     #contactmecontainer {
