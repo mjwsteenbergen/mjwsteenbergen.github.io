@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NNTN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="description"
+        content="I am a student at the TU Delft studying computer sciences. I do everything with software engineering. I am fascinated with design, how the world works and everything else. " />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Martijn Steenbergen" />
+    <meta name="twitter:description"
+        content="I am a student at the TU Delft studying computer sciences. I do everything with software engineering. I am fascinated with design, how the world works and everything else. " />
+    <meta name="twitter:site" content="@mjwsteenbergen">
+    <meta name="twitter:creator" content="@mjwsteenbergen">
+    <meta name="twitter:image" content="https://nntn.nl/profile.jpg">
+    <meta property="og:site_name" content="NNTN" />
+    <meta property="og:title" content="Martijn Steenbergen" />
+    <meta property="og:description"
+        content="I am a student at the TU Delft studying computer sciences. I do everything with software engineering. I am fascinated with design, how the world works and everything else. " /> -->
+        <style>
+            @import url('https://rsms.me/inter/inter.css');
+            html { font-family: 'Inter', sans-serif; }
+            @supports (font-variation-settings: normal) {
+            html, pre { font-family: 'Inter var', sans-serif; }
+            }
+
+            body, h1, h2, h3, p {
+                margin: 0;
+            }
+
+            main {
+                display: grid;
+                grid-template-rows: 40% 40% 20%;
+                grid-template-columns: 60% 40%;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                height: 100vh;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+                margin-right: 30px;
+            }
+
+            #static-text {
+                grid-row: 1;
+                grid-column: 2;
+            }
+
+            .box {
+                background-color: RGB(231,230,230);
+                padding: 40px;
+                /* margin: 30px; */
+
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #playing-text {
+                grid-row: 3;
+                grid-column: 2;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                column-gap: 20px;
+            }
+
+            #album-img {
+                width: 70px;
+            }            
+
+            #reminder-text {
+                grid-row: 3;
+                grid-column: 2;
+            }
+
+            #static-text h1 {
+                margin-bottom: 15px;
+            }
+
+            h2 {
+                color: RGB(118,113,113);
+            }
+
+            h1 {
+                color: RGB(59,56,56);
+                font-size: 60px;
+            }
+
+            h3 {
+                color: RGB(59,56,56);
+            }
+
+            h4 {
+                color: RGB(59,56,56);
+            }
+
+            #video {
+                grid-column: 2;
+                grid-row: 2;
+                /* padding: 40px; */
+                /* margin-top: 50px; */
+            }
+
+            @keyframes credits {
+                0% {
+                    margin-top: 100vh;
+                }
+                100% {
+                    transform: translate3d(0, -100%, 0);
+                }
+            }
+
+            #text {
+                grid-row-start: 1;
+                /* grid-row-end: 3; */
+                align-self: start;
+                text-align: center;
+                animation: credits 80s linear infinite;
+            }
+
+            #time {
+                text-align: right;
+                color: RGB(118,113,113);
+                margin-right: 50px;
+            }
+
+            #textholder {
+                padding: 0 30px 0 30px;
+            }
+
+            #textholder h1 {
+                margin-bottom: 20px;
+            }
+
+            #textholder p {
+                font-weight: 800;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+            .title {
+                font-weight: normal;
+                /* font-size: 20px; */
+                text-transform: lowercase;
+            }
+
+            span.bold {
+                font-weight: bold;
+            }
+
+
+        </style>
+        <script>
+            console.info("https://accounts.spotify.com/en/authorize?response_type=token&client_id=adaaf209fb064dfab873a71817029e0d&redirect_uri=https:%2F%2Fdeveloper.spotify.com%2Fdocumentation%2Fweb-playback-sdk%2Fquick-start%2F&scope=streaming%20user-read-email%20user-modify-playback-state%20user-read-private&show_dialog=true");
+            window.addEventListener('load', (event) => {
+                var ifr = document.getElementById("videoiframe");
+                var tex = document.getElementById("static-text");
+                ifr.width = tex.clientWidth;
+                ifr.height = tex.clientWidth * 2160 / 3840;
+                console.log("load event detected!");
+                document.getElementsByTagName("main")[0].setAttribute("style", "max-height:" + window.innerHeight + "px")
+                currentTime();
+            });
+
+            function updateTime(k) {
+                    if (k < 10) {
+                        return "0" + k;
+                    }
+                    else {
+                        return k;
+                    }
+                }
+
+            function currentTime() {
+                var date = new Date(); /* creating object of Date class */
+                var hour = date.getHours();
+                var min = date.getMinutes();
+                var sec = date.getSeconds();
+                hour = updateTime(hour);
+                min = updateTime(min);
+                sec = updateTime(sec);
+                // document.getElementById("time").innerHTML = hour + ":" + min + ":" + sec; /* adding time to the div */
+                var t = setTimeout(function () { currentTime() }, 1000); /* setting timer */
+            }
+
+        </script>
+        <script src="https://sdk.scdn.co/spotify-player.js"></script>
+        <script>
+            window.onSpotifyWebPlaybackSDKReady = () => {
+                const token = window.localStorage.getItem("token") || "test";
+                window.localStorage.setItem("token", token);
+                const player = new Spotify.Player({
+                    name: 'Thesis WebPage',
+                    getOAuthToken: cb => { cb(token); }
+                });
+
+                // Error handling
+                player.addListener('initialization_error', ({ message }) => { console.error(message); });
+                player.addListener('authentication_error', ({ message }) => { console.error(message); });
+                player.addListener('account_error', ({ message }) => { console.error(message); });
+                player.addListener('playback_error', ({ message }) => { console.error(message); });
+
+                // Playback status updates
+                player.addListener('player_state_changed', state => { 
+                    console.log('player_state_changed', state); 
+                    
+                    if (!state) {
+                        document.getElementById("playing").innerText = "Not playing anything";
+                        return;
+                    }
+
+                    let {
+                        current_track,
+                        next_tracks: [next_track]
+                    } = state.track_window;
+
+                    document.getElementById("playing-song").innerText = current_track.name;
+                    document.getElementById("playing-artist").innerText = current_track.artists.map(i => i.name).join(" • ");
+                    document.getElementById("album-img").src = current_track.album.images[0].url
+
+
+                    console.log('Currently Playing', current_track);
+                    console.log('Playing Next', next_track);
+
+                    // state.
+                });
+
+                // Ready
+                player.addListener('ready', ({ device_id }) => {
+                    console.log('Ready with Device ID', device_id);
+                });
+
+                // Not Ready
+                player.addListener('not_ready', ({ device_id }) => {
+                    console.log('Device ID has gone offline', device_id);
+                });
+
+                // Connect to the player!
+                player.connect();
+
+                // function state()
+                // {
+                //     player.getCurrentState().then(state => {
+                //         if (!state) {
+                //             document.getElementById("playing").innerText = "Not playing anything";
+                //             return;
+                //         }
+
+                //         let {
+                //             current_track,
+                //             next_tracks: [next_track]
+                //         } = state.track_window;
+
+                //         document.getElementById("playing").innerText = current_track;
+
+                //         console.log('Currently Playing', current_track);
+                //         console.log('Playing Next', next_track);
+                //     });
+                // }
+
+                player.nextTrack().then(() => {
+                    console.log('Skipped to next track!');
+                });
+
+                // state();
+            };
+        </script>
+</head>
+
+<body>
+    <main>
+        <section id="static-text" class="box">
+            <div>
+                <h2>Master Thesis Defense | Martijn Steenbergen | 14:00</h2>
+                <h1>Reducing Human Error in Online Controlled Experiments</h1>
+            </div>
+            <div>
+                <p>Please make sure you are muted</p>
+                <p>Please make sure your video is turned off</p>
+            </div>
+            
+        </section>
+
+        <!-- <section id="reminder-text" class="box">
+            
+        
+        </section> -->
+
+        <section id="playing-text" class="box">
+            <!-- style="justify-self: flex-end;" -->
+            <div>
+                <img id=album-img></img>
+            </div>
+            <div>
+                <h3>Currently playing</h4>
+                <p><span id=playing-song class=bold></span> by <span id=playing-artist class=bold></span></p>
+                <!-- <h1 id=time>Insert ->Current Time<-</h1> -->
+            </div>
+        
+        </section>
+
+        <section id=video>
+            <iframe id=videoiframe width="630" height="354" src="https://www.youtube.com/embed?listType=playlist&list=PLcSD8rtHpkKKJsh4baP99iHCmU0hMEeK1&loop=1&autoplay=1&controls=0&disablekb=1&modestbranding=1&mute=1" frameborder="0" allowfullscreen">
+                <!-- &autoplay=1 -->
+            </iframe>
+        </section>
+        <section id=text>
+            <div id=textholder>
+                <h1>This thesis is <br>brought to you by:</h1>
+                <p>Maryann, <span class=title>at this point can handle anything </span>, <br>
+                    Taico, <span class=title>No forbidden words during the presentations</span>, Aerts<br>
+                    Kevin, <span class=title>fellow Cortex lover</span>, Anderson<br>
+                    Maurichio, <span class=title>Will make your day with only a "hello"</span>, Aniche<br>
+                    Eva, <span class=title>Kindness in physical form</span>, Anker<br>
+                    Maud, <span class=title>Social genius</span>, Beulen<br>
+                    Carolin, <span class=title>Amazing person</span>, Brandt<br>
+                    Dereck, <span class=title>keeps me accountable</span>, Bridie<br>
+                    Chiel, <span class=title>React native feedback expert</span>, Bruin<br>
+                    Liam, <span class=title>Makes sure my feelings are ok</span>, Clark<br>
+                    Luís, <span class=title>Fellow train traveler</span>, Cruz<br>
+                    Jean, <span class=title>we moeten echt nog een keer afspreken</span>, de Leeuw<br>
+                    Floris, <span class=title>Machine learning expert</span>, den Hengst<br>
+                    Job, <span class=title>Lord dhr dr Srgt Ir Koning Inventor</span>, Engel<br>
+                    Greeshma, <span class=title>Dogs Butt Food</span>, Gowda <br>
+                    Martino, <span class=title>Way cooler than he thinks</span>, Gribnau<br>
+                    Esma, <span class=title>winners of the cutest baby award</span>, Güleç<br>
+                    Mark, <span class=title>partner in crime</span>, Haakman<br>
+                    Hester, <span class=title>Omg. It’s havelaar now, isn’t it. Yay</span>, Havelaar<br>
+                    Dennis, <span class=title>Just overall great guy</span>, Havelaar<br>
+                    Jaap, <span class=title>Wildcard</span>, Heijligers<br>
+                    Kevin, <span class=title>there is an 99% chance you already know him</span>, Hill<br>
+                    Mari, <span class=title>way too kind</span>, Hughes<br>
+                    Marnix, <span class=title>Hard working</span>, Huibers<br>
+                    Hennie, <span class=title>hoe gaat het met de parkiet</span>, Huijgens<br>
+                    Merel, <span class=title>cannot unsee Efteling pak</span>, Joosse<br>
+                    Elvan, <span class=title>ing organiser</span>, Kula<br>
+                    Snighda, <span class=title>The enabler</span>, Lal<br>
+                    Chris, <span class=title>BBBBOL.COM</span>, Langhout<br>
+                    Chris, <span class=title>Niet cool genoeg voor diamant</span>, Lemaire<br>
+                    Fransesca, <span class=title>Beste vragen steller</span>, Lucas<br>
+                    Marielenne, <span class=title>bikkelhard</span>, Martens<br>
+                    Frank, <span class=title>Python master en OOP buddy</span>, Mulder<br>
+                    Ernst, <span class=title>AB-solutely cool</span>, Mulders<br>
+                    Mitchell, <span class=title>Will open doors for you</span>, Olsthoorn<br>
+                    Thomas, <span class=title>knows how to bbq</span>, Overklift<br>
+                    Drieke, <span class=title>gives you all the awesome things you need for your home</span>, Post<br>
+                    Peter, <span class=title>knows what is going on in the world</span>, Post<br>
+                    Sebastian, <span class=title>Unmissable</span>, Proksch<br>
+                    Bart, <span class=title>Can 3d print anything</span>, Pruijmboom<br>
+                    Minaksie, <span class=title>How does one fit so much caring into a person</span>, Ramsoekh<br>
+                    Mike , <span class=title>Mighty Strikey</span>, Rebel<br>
+                    Jan, <span class=title>please give me a good grade</span>, Rellermeyer <br>
+                    Charlot, <span class=title>toetjes master</span>, Ringnalda<br>
+                    Gerben, <span class=title>I will not be running around the room in my underwear </span>, Ringnalda<br>
+                    Hester, <span class=title>Mumster</span>, Ringnalda<br>
+                    Karen, <span class=title>I will come by soon. Promise. </span>, Ringnalda<br>
+                    Omi, <span class=title>Most awesome grandma</span>, Ringnalda<br>
+                    Thore, <span class=title>pôh</span>, Roepman<br>
+                    Diederik, <span class=title>codeert effe een mooi programmaatje bij elkaar</span>, Schonebaum<br>
+                    Gerben, <span class=title>Flanst zo even een nodejs server in docker met git en scrum in elkaar</span>,Schonebaum<br>
+                    Hansie , <span class=title>Vertrouwt me nog steeds met planten</span>, Schonebaum<br>
+                    Johan, <span class=title>proud dad</span>, Schonebaum<br>
+                    Niko, <span class=title>Socrates </span>, Schonebaum<br>
+                    Maarten, <span class=title>animal lover</span>, Sijm<br>
+                    Thomas, <span class=title>Always there when you need him</span>, Smith<br>
+                    Wim, <span class=title>Builds all the cool stuff</span>, Spaargaren<br>
+                    Annet, <span class=title>golfpro</span>, Steenbergen<br>
+                    Fred, <span class=title>StarTrek/Gate botengek pap</span>, Steenbergen<br>
+                    Joris, <span class=title>Minihet</span>, Steenbergen<br>
+                    Coos, <span class=title>has the best and cutest dogs</span>, van Aalst<br>
+                    Eric, <span class=title>amazing handyman</span>, van Aalst<br>
+                    Suzanne, <span class=title>Makes sure everything is on track</span>, van Ardenne<br>
+                    Sander, <span class=title>Knows how to easily handle 400+ students</span>, van den Oever<br>
+                    To, <span class=title>Super technisch</span>, van der Lee<br>
+                    Tim, <span class=title>Yes this is a website. Of course it has lighthouse issues</span>, van der Lippe<br>
+                    Arie, <span class=title>The big boss</span>, van Deursen<br>
+                    Gijsbert, <span class=title>Draagvleugelboot je voorbij</span>, van Marrewijk<br>
+                    Irene, <span class=title>Amazing feedback giver</span>, van Wijk<br>
+                    Otto, <span class=title>fixes all the things</span>, Visser<br>
+                    Tim, <span class=title>Blows you away with stekker-plugin-skills</span>, Visser<br>
+                    Gijs, <span class=title>Houdt me up to date met de laatste carnaval krakers</span>, Weterings<br>
+                    Ralf, <span class=title>can pepper do the presentation for me?</span>, Wolter<br>
+                    Andy, <span class=title>the amazingly wise smart mentor</span>, Zaidman<br></p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
