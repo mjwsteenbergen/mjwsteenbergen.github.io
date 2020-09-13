@@ -242,31 +242,9 @@
                 // Connect to the player!
                 player.connect();
 
-                // function state()
-                // {
-                //     player.getCurrentState().then(state => {
-                //         if (!state) {
-                //             document.getElementById("playing").innerText = "Not playing anything";
-                //             return;
-                //         }
-
-                //         let {
-                //             current_track,
-                //             next_tracks: [next_track]
-                //         } = state.track_window;
-
-                //         document.getElementById("playing").innerText = current_track;
-
-                //         console.log('Currently Playing', current_track);
-                //         console.log('Playing Next', next_track);
-                //     });
-                // }
-
                 player.nextTrack().then(() => {
                     console.log('Skipped to next track!');
                 });
-
-                // state();
             };
         </script>
 </head>
@@ -311,12 +289,12 @@
         <section id=text>
             <div id=textholder>
                 <h1>This thesis is <br>brought to you by:</h1>
-                <p>Maryann, <span class=title>at this point can handle anything </span>, <br>
+                <p>
                     Taico, <span class=title>No forbidden words during the presentations</span>, Aerts<br>
                     Kevin, <span class=title>fellow Cortex lover</span>, Anderson<br>
                     Maurichio, <span class=title>Will make your day with only a "hello"</span>, Aniche<br>
                     Eva, <span class=title>Kindness in physical form</span>, Anker<br>
-                    Maud, <span class=title>Social genius</span>, Beulen<br>
+                    Maud, <span class=title>taught me how to make beautiful slides</span>, Beulen<br>
                     Carolin, <span class=title>Amazing person</span>, Brandt<br>
                     Dereck, <span class=title>keeps me accountable</span>, Bridie<br>
                     Chiel, <span class=title>React native feedback expert</span>, Bruin<br>
@@ -329,7 +307,7 @@
                     Martino, <span class=title>Way cooler than he thinks</span>, Gribnau<br>
                     Esma, <span class=title>winners of the cutest baby award</span>, Güleç<br>
                     Mark, <span class=title>partner in crime</span>, Haakman<br>
-                    Hester, <span class=title>Omg. It’s havelaar now, isn’t it. Yay</span>, Havelaar<br>
+                    Hester, <span class=title>Omg. It’s havelaar now, isn’t it? Yay!</span>, Havelaar<br>
                     Dennis, <span class=title>Just overall great guy</span>, Havelaar<br>
                     Jaap, <span class=title>Wildcard</span>, Heijligers<br>
                     Kevin, <span class=title>there is an 99% chance you already know him</span>, Hill<br>
@@ -337,7 +315,7 @@
                     Marnix, <span class=title>Hard working</span>, Huibers<br>
                     Hennie, <span class=title>hoe gaat het met de parkiet</span>, Huijgens<br>
                     Merel, <span class=title>cannot unsee Efteling pak</span>, Joosse<br>
-                    Elvan, <span class=title>ing organiser</span>, Kula<br>
+                    Elvan, <span class=title>makes sure the ING side is running smoothly</span>, Kula<br>
                     Snighda, <span class=title>The enabler</span>, Lal<br>
                     Chris, <span class=title>BBBBOL.COM</span>, Langhout<br>
                     Chris, <span class=title>Niet cool genoeg voor diamant</span>, Lemaire<br>
@@ -351,6 +329,7 @@
                     Peter, <span class=title>knows what is going on in the world</span>, Post<br>
                     Sebastian, <span class=title>Unmissable</span>, Proksch<br>
                     Bart, <span class=title>Can 3d print anything</span>, Pruijmboom<br>
+                    Maryann, <span class=title>at this point can handle anything </span>, Ravestijn<br>
                     Minaksie, <span class=title>How does one fit so much caring into a person</span>, Ramsoekh<br>
                     Mike , <span class=title>Mighty Strikey</span>, Rebel<br>
                     Jan, <span class=title>please give me a good grade</span>, Rellermeyer <br>
@@ -360,7 +339,7 @@
                     Karen, <span class=title>I will come by soon. Promise. </span>, Ringnalda<br>
                     Omi, <span class=title>Most awesome grandma</span>, Ringnalda<br>
                     Thore, <span class=title>pôh</span>, Roepman<br>
-                    Diederik, <span class=title>codeert effe een mooi programmaatje bij elkaar</span>, Schonebaum<br>
+                    Diederik, <span class=title>maximaliseerd de zonneinput met zijn codeer skills</span>, Schonebaum<br>
                     Gerben, <span class=title>Flanst zo even een nodejs server in docker met git en scrum in elkaar</span>,Schonebaum<br>
                     Hansie , <span class=title>Vertrouwt me nog steeds met planten</span>, Schonebaum<br>
                     Johan, <span class=title>proud dad</span>, Schonebaum<br>
