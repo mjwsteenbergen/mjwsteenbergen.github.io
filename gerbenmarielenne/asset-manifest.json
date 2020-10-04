@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/gerbenmarielenne/static/css/main.82751b78.chunk.css",
-    "main.js": "/gerbenmarielenne/static/js/main.28f119e5.chunk.js",
-    "main.js.map": "/gerbenmarielenne/static/js/main.28f119e5.chunk.js.map",
+    "main.js": "/gerbenmarielenne/static/js/main.4c4845aa.chunk.js",
+    "main.js.map": "/gerbenmarielenne/static/js/main.4c4845aa.chunk.js.map",
     "runtime-main.js": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js",
     "runtime-main.js.map": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js.map",
     "static/js/2.a4181dc0.chunk.js": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js",
     "static/js/2.a4181dc0.chunk.js.map": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.map",
     "index.html": "/gerbenmarielenne/index.html",
-    "precache-manifest.ae0872b7a76273f139f03f08d89a375d.js": "/gerbenmarielenne/precache-manifest.ae0872b7a76273f139f03f08d89a375d.js",
+    "precache-manifest.07739410b808ab61d710341f8b513bbe.js": "/gerbenmarielenne/precache-manifest.07739410b808ab61d710341f8b513bbe.js",
     "service-worker.js": "/gerbenmarielenne/service-worker.js",
     "static/css/main.82751b78.chunk.css.map": "/gerbenmarielenne/static/css/main.82751b78.chunk.css.map",
     "static/js/2.a4181dc0.chunk.js.LICENSE.txt": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.1a982ae1.js",
     "static/js/2.a4181dc0.chunk.js",
     "static/css/main.82751b78.chunk.css",
-    "static/js/main.28f119e5.chunk.js"
+    "static/js/main.4c4845aa.chunk.js"
   ]
 }
