@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f2373f92b3c8746b1c917049a74fbc1",
+    "revision": "785471c0076e08b500d1765fd8451b73",
     "url": "/gerbenmarielenne/index.html"
   },
   {
-    "revision": "934022c21873574435c9",
-    "url": "/gerbenmarielenne/static/css/main.f2d6f6ad.chunk.css"
+    "revision": "bf4fd66217ab65727f48",
+    "url": "/gerbenmarielenne/static/css/main.0c9e4556.chunk.css"
   },
   {
     "revision": "2480141f49a741930ec1",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "934022c21873574435c9",
+    "revision": "bf4fd66217ab65727f48",
     "url": "/gerbenmarielenne/static/js/main.20ce5493.chunk.js"
   },
   {
