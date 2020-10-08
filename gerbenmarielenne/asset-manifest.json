@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/gerbenmarielenne/static/css/main.9a7868ca.chunk.css",
-    "main.js": "/gerbenmarielenne/static/js/main.9f61a2dc.chunk.js",
-    "main.js.map": "/gerbenmarielenne/static/js/main.9f61a2dc.chunk.js.map",
+    "main.css": "/gerbenmarielenne/static/css/main.f2d6f6ad.chunk.css",
+    "main.js": "/gerbenmarielenne/static/js/main.20ce5493.chunk.js",
+    "main.js.map": "/gerbenmarielenne/static/js/main.20ce5493.chunk.js.map",
     "runtime-main.js": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js",
     "runtime-main.js.map": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js.map",
     "static/js/2.a4181dc0.chunk.js": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js",
     "static/js/2.a4181dc0.chunk.js.map": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.map",
     "index.html": "/gerbenmarielenne/index.html",
-    "precache-manifest.ee4a8125cfc3e919262911c95adeaa32.js": "/gerbenmarielenne/precache-manifest.ee4a8125cfc3e919262911c95adeaa32.js",
+    "precache-manifest.e21e6095f7861039889ea5d46f08f41c.js": "/gerbenmarielenne/precache-manifest.e21e6095f7861039889ea5d46f08f41c.js",
     "service-worker.js": "/gerbenmarielenne/service-worker.js",
-    "static/css/main.9a7868ca.chunk.css.map": "/gerbenmarielenne/static/css/main.9a7868ca.chunk.css.map",
+    "static/css/main.f2d6f6ad.chunk.css.map": "/gerbenmarielenne/static/css/main.f2d6f6ad.chunk.css.map",
     "static/js/2.a4181dc0.chunk.js.LICENSE.txt": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.LICENSE.txt",
     "static/media/close-circle-outline.svg": "/gerbenmarielenne/static/media/close-circle-outline.64600fb0.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1a982ae1.js",
     "static/js/2.a4181dc0.chunk.js",
-    "static/css/main.9a7868ca.chunk.css",
-    "static/js/main.9f61a2dc.chunk.js"
+    "static/css/main.f2d6f6ad.chunk.css",
+    "static/js/main.20ce5493.chunk.js"
   ]
 }
