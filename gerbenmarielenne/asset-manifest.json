@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gerbenmarielenne/static/css/main.b90b42ed.chunk.css",
+    "main.js": "/gerbenmarielenne/static/js/main.90ac106f.chunk.js",
+    "main.js.map": "/gerbenmarielenne/static/js/main.90ac106f.chunk.js.map",
+    "runtime-main.js": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js",
+    "runtime-main.js.map": "/gerbenmarielenne/static/js/runtime-main.1a982ae1.js.map",
+    "static/js/2.a4181dc0.chunk.js": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js",
+    "static/js/2.a4181dc0.chunk.js.map": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.map",
+    "index.html": "/gerbenmarielenne/index.html",
+    "precache-manifest.a76761267c8fc678ef913872a674a2c5.js": "/gerbenmarielenne/precache-manifest.a76761267c8fc678ef913872a674a2c5.js",
+    "service-worker.js": "/gerbenmarielenne/service-worker.js",
+    "static/css/main.b90b42ed.chunk.css.map": "/gerbenmarielenne/static/css/main.b90b42ed.chunk.css.map",
+    "static/js/2.a4181dc0.chunk.js.LICENSE.txt": "/gerbenmarielenne/static/js/2.a4181dc0.chunk.js.LICENSE.txt",
+    "static/media/close-circle-outline.svg": "/gerbenmarielenne/static/media/close-circle-outline.64600fb0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a982ae1.js",
+    "static/js/2.a4181dc0.chunk.js",
+    "static/css/main.b90b42ed.chunk.css",
+    "static/js/main.90ac106f.chunk.js"
+  ]
+}
