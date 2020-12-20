@@ -1,0 +1,177 @@
+@media(max-width: 1050px) {
+    #introduction {
+        /* height        : 100vh; */
+        display       : flex;
+        flex-direction: column;
+        overflow-y    : auto;
+    }
+
+    .outgoing {
+        padding-bottom: 50px;
+    }
+
+    #hero h1 {
+        margin-bottom: 0;
+        /* margin-top: 20px; */
+        font-size    : 3em;
+        align-self   : stretch;
+        text-align   : center;
+    }
+
+    #hero p {
+        font-size    : larger;
+        align-self   : center;
+        text-align   : center;
+        /* max-width : 40ch; */
+    }
+
+    #hero h2 {
+        margin-top: 0;
+        font-size : 2em;
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .profile-picture {
+        width        : 75vw;
+        max-width    : 300px;
+        border-radius: 100%;
+        align-self   : center;
+        margin-top   : 5%;
+    }
+
+    #introduction>* {
+        padding-left : 6%;
+        padding-right: 6%;
+    }
+
+}
+
+@media(max-width: 500px) {
+    .profile-picture {
+        width        : 100vw !important;
+        max-width: unset;
+        margin-top: 0;
+        border-radius: 0px;
+    }
+}
+
+body {
+    background-color: var(--color-accent);
+}
+
+@import url('/font/inter.css');
+
+h1,
+h2 {
+    font-family: "Inter";
+}
+
+#hero .outgoing {
+
+    /* display        : flex; */
+    /* flex-direction : column; */
+    align-self        : center;
+    /* justify-content: center; */
+
+    flex-grow: 2;
+}
+
+#hero a {
+    color           : var(--color-foreground-flipped);
+    background-color: var(--color-accent-dark);
+
+    margin : 15px;
+    padding: 25px 35px 25px 35px;
+
+    text-transform : uppercase;
+    text-decoration: none;
+
+    align-self: stretch;
+
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-end;
+
+    font-size: large;
+
+    /* box-shadow: 7px -7px #003D3D; */
+}
+
+#hero a:hover {
+    background-color: var(--color-accent-slightly-dark);
+}
+
+
+#hero a span {
+    display: block;
+}
+
+#hero a svg {
+    transform  : rotate(-0.125turn);
+    height     : 1.3em;
+    margin-left: 2px;
+}
+
+#hero {
+    background-color: var(--color-accent);
+    color           : var(--color-foreground-flipped);
+}
+
+@media(min-width: 1050px) {
+    #hero {
+        height        : 100vh;
+        display       : flex;
+        flex-direction: row-reverse;
+    }
+
+    #hero .profile-picture {
+        display: none;
+    }
+
+    #hero .cover-picture {
+        background-size      : cover;
+        width                : 55vw;
+        background-attachment: fixed;
+        height               : 100vh;
+        background-image     : url("/files/me.jpeg");
+    }
+
+    #hero #introduction {
+        width        : 45vw;
+        padding      : 20px;
+        padding-left : 60px;
+        padding-right: 60px;
+
+        font-size: larger;
+
+        display       : flex;
+        flex-direction: column;
+
+        z-index: 10;
+
+        overflow-y: auto;
+    }
+
+    #hero h1 {
+        font-size : 13em;
+        margin    : 0;
+        margin-top: 60px;
+        color     : var(--color-accent-white);
+    }
+
+    #hero h2 {
+        margin     : 0;
+        padding    : 0;
+        font       : var(--font-base);
+        color      : var(--color-accent-white);
+        font-weight: bold;
+        font-size  : 3em;
+    }
+
+    #hero p {
+        font-size  : x-large;
+        font-weight: 300;
+        font-family: var(--font-base);
+    }
+}
