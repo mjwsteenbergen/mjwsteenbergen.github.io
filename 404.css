@@ -1,7 +1,24 @@
 body {
-    margin: 0;
-    font-family: Georgia;
+    height: 100vh;
 }
+
+#top {
+    display: flex;
+    height: 50vh;
+    background-color: var(--color-accent);
+    vertical-align: text-bottom;
+    color: white;
+}
+
+#top p {
+    align-self: flex-end;
+    text-align: center;
+    width: 100vw;
+    font-size: 500%;
+    padding-right: 30%;
+}
+
+
 
 .largest{
 	text-align: center;
@@ -31,7 +48,6 @@ p {
 }
 
 .copyyright{
-	float: 
 	vertical-align: bottom;
 }
 
@@ -48,35 +64,27 @@ p {
     position: relative;
 }
 
-.topText
-{
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    text-align: center;
-}
 
-.arrow{
-    background-image: url(bestanden/Black_Down_Arrow.png);
-    background-repeat: no-repeat;
-    background-size: 40%;
-    background-position: 75% 20%;
-    float: left;
-    height: 10%;
-    width: 4%;
 
+.goBack svg {
+    transform : rotate(0.5turn);
+    height    : 1em;
+    margin-right: 5px;
 }
     
 .goBack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10%;
     width: 100%;
-    float: right;
     margin-right: 40%;
+    
+    font-size: 50px;
 }
 
 .goBackText {
     color: rgb(150,0,0);
-    font-size: 200%;
     text-decoration: none;
     float: right;
 }
@@ -84,10 +92,4 @@ p {
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
     color: rgb(150,0,0);
-}
-
-.backImage {
-    height: 15pt;
-    float: right;
-    margin-top: 6pt;
 }
