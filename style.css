@@ -77,7 +77,7 @@ h2 {
     flex-grow: 2;
 }
 
-#hero a {
+#hero div > a {
     color           : var(--color-foreground-flipped);
     background-color: var(--color-accent-dark);
 
@@ -98,10 +98,14 @@ h2 {
     /* box-shadow: 7px -7px #003D3D; */
 }
 
-#hero a:hover {
+#hero div>a:hover {
     background-color: var(--color-accent-slightly-dark);
 }
 
+#hero p > a {
+    color: var(--color-foreground-flipped);;
+    text-decoration: none;
+}
 
 #hero a span {
     display: block;

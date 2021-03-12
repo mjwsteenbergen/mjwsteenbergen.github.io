@@ -226,6 +226,7 @@ explicitly, e.g.
 /* @media(prefers-color-scheme: light) { */
     :root {
         --color-bg: rgb(254, 254, 254);
+        --color-bg-darker: rgb(141, 141, 141);
         
         
         --color-accent: #b40000;
