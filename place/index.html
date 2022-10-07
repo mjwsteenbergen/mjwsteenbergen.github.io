@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
     <style>
+      @font-face {
+        font-family: "DIN Pro";
+        src: url("/fonts/DIN-Pro-400.otf");
+      }
+
       #map {
         position: absolute;
         top: 0;
@@ -31,12 +36,29 @@
         padding: 20px;
       }
 
+      .mapboxgl-popup-content h1 {
+        line-height: initial;
+        margin: 0;
+      }
+
       .mapboxgl-popup-content a {
         font-size: larger;
       }
+
+      .mapboxgl-marker {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-family: "DIN Pro";
+      }
+
+      .mapboxgl-marker .placeName {
+        max-width: 80px;
+        margin: 0;
+      }
     </style>
     <title>Places</title>
-    <script type="module" crossorigin src="/place/assets/path.bc460149.js"></script>
+    <script type="module" crossorigin src="/assets/path.e8ceeb65.js"></script>
   </head>
   <body>
     <div id="map"></div>
