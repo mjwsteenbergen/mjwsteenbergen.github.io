@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-    <style>
-      @font-face {
-        font-family: "DIN Pro";
-        src: url("/fonts/DIN-Pro-400.otf");
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+  <link href="/place/font/font.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: "DIN Pro";
+      src: url("/fonts/DIN-Pro-400.otf");
+    }
+
+    @supports (height: 100dvh) {
+      main {
+        height: 100dvh !important;
+      }
+    }
+
+    main {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100vh;
+
+
+      width: 100vw;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+    }
+
+    @media(max-width: 1050px) {
+      main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
       }
 
-      #map {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        width: 100vw;
+      #text place-details {
+        height: 66vh;
       }
+    }
 
-      p.placetype {
-        background-color: brown;
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        border-radius: 100vh;
-        width: fit-content;
-        padding: 0px 6px;
-      }
+    #map {
+      height: 100%;
+      width: 100%;
+    }
 
-      h1 {
-        font-size: xx-large;
-      }
+    #text {
+      display: flex;
+    }
 
-      .mapboxgl-popup-content {
-        padding: 20px;
-      }
+    p.placetype {
+      background-color: brown;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      border-radius: 100vh;
+      width: fit-content;
+      padding: 0px 6px;
+    }
 
-      .mapboxgl-popup-content h1 {
-        line-height: initial;
-        margin: 0;
-      }
+    h1 {
+      font-size: xx-large;
+    }
 
-      .mapboxgl-popup-content a {
-        font-size: larger;
-      }
+    .mapboxgl-popup-content {
+      padding: 20px;
+    }
 
-      .mapboxgl-marker {
-        display: flex;
-        gap: 5px;
-        align-items: center;
-        font-family: "DIN Pro";
-      }
+    .mapboxgl-popup-content h1 {
+      line-height: initial;
+      margin: 0;
+    }
 
-      .mapboxgl-marker .placeName {
-        max-width: 80px;
-        margin: 0;
-      }
-    </style>
-    <title>Places</title>
-    <script type="module" crossorigin src="/place/assets/path.e8ceeb65.js"></script>
-  </head>
-  <body>
-    <div id="map"></div>
-    
-  </body>
+    .mapboxgl-popup-content a {
+      font-size: larger;
+    }
+
+    .mapboxgl-marker {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      font-family: "DIN Pro";
+    }
+
+    .mapboxgl-marker .placeName {
+      max-width: 80px;
+      margin: 0;
+    }
+  </style>
+  <title>Places</title>
+  <script type="module" crossorigin src="/place/assets/path.75d9c331.js"></script>
+</head>
+
+<body>
+  <main>
+    <section id="map"></section>
+    <section id="text"></section>
+  </main>
+  
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  
+</body>
+
 </html>
