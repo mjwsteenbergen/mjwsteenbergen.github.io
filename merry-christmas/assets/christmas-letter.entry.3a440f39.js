@@ -1,1 +1,0 @@
-import{r as e,g as s}from"./path.6a172797.js";const r=class{constructor(t){e(this,t),this.data=""}connectedCallback(){document.getElementsByTagName("data-store")[0].listen({property:"letter",listener:t=>this.onData(t)})}onData(t){this.data=t}render(){this.element.innerHTML=this.data}get element(){return s(this)}};export{r as christmas_letter};
