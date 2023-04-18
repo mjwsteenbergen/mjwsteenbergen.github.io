@@ -1,82 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-  <link href="/place/font/font.css" rel="stylesheet">
-  <style>
-    @font-face {
-      font-family: "DIN Pro";
-      src: url("/place/fonts/DIN-Pro-400.otf");
-    }
-
-    @supports (height: 100dvh) {
-      main {
-        height: 100dvh !important;
-      }
-    }
-
-    main {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      height: 100vh;
-
-
-      width: 100vw;
-
-      display: grid;
-      grid-template-columns: 1fr auto;
-    }
-
-    @media(max-width: 1050px) {
-      main {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto;
-      }
-
-      #text > * {
-        height: 66vh;
-      }
-    }
-
-    #map {
-      height: 100%;
-      width: 100%;
-    }
-
-    #text {
-      display: flex;
-    }
-
-    p.placetype {
-      background-color: brown;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      border-radius: 100vh;
-      width: fit-content;
-      padding: 0px 6px;
-    }
-
-    h1 {
-      font-size: xx-large;
-    }
-  </style>
-  <title>Places</title>
-  <script type="module" crossorigin src="/place/assets/path.338c356b.js"></script>
-</head>
-
-<body>
-  <main>
-    <places-map></places-map>
-    <section id="text"></section>
-  </main>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Places</title>
+    <script type="module" crossorigin src="/assets/index-483a81eb.js"></script>
+    <link rel="stylesheet" href="/assets/index-00594806.css">
+  </head>
+  <body class="overscroll-y-none">
+    <div id="root"></div>
+    
+  </body>
 </html>
